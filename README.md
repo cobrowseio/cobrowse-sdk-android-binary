@@ -1,1 +1,1 @@
-# cobrowse-sdk-android-binary
+# CobrowseIO SDK for Android
