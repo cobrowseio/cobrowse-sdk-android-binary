@@ -14,7 +14,7 @@ Cobrowse uses a maven distribution. Add these lines to your gradle files:
 ```gradle
 repositories {
     jcenter()
-    # ... other respositories ...
+    // ... other respositories ...
     maven { url "https://raw.github.com/cobrowseio/cobrowse-sdk-android-binary/master" }
 }
 ```
@@ -22,7 +22,7 @@ repositories {
 **In your app build.gradle**
 ```gradle
 dependencies {
-    # ... other dependencies ...
+    // ... other dependencies ...
     implementation 'io.cobrowse:cobrowse-sdk-android:0.+'
 }
 ```
