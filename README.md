@@ -11,11 +11,10 @@ You can try the Cobrowse.io service for **free** and **without signing up for an
 Cobrowse uses a maven distribution. Add these lines to your gradle files:
 
 **In your project build.gradle**
+Esnure that JCenter is added to your list of repositories:
 ```gradle
 repositories {
     jcenter()
-    // ... other respositories ...
-    maven { url "https://raw.github.com/cobrowseio/cobrowse-sdk-android-binary/master" }
 }
 ```
 
