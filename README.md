@@ -6,6 +6,8 @@ With [Cobrowse.io](https://cobrowse.io)'s screen sharing technology for mobile a
 
 You can try the Cobrowse.io service for **free** and **without signing up for an account**. Just follow the installation instructions below, then head to <https://cobrowse.io/trial> to use the trial dashboard.
 
+These instructions will install a binary distribution of the Cobrowse.io SDK. Customers with a paid subscription can request source code access by [emailing us](mailto:hello@cobrowse.io).
+
 ## Installation
 
 Cobrowse uses a maven distribution. Add these lines to your gradle files:
