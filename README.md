@@ -1,8 +1,12 @@
-# Cobrowse.io SDK for Android
+# Cobrowse.io - Android Native SDK
 
-Cobrowse.io for Android supports API 19 (4.4 KitKat) and above. Learn more at [https://cobrowse.io](https://cobrowse.io). Cobrowse.io is 100% free and easy to try out in your apps. Please follow the installation instructions below, then head to <https://cobrowse.io/trial> to access the trial dashboard.
+Cobrowse.io for Android supports API 19 (4.4 KitKat) and above. 
 
-Clients may access and integrate full source code for our SDKs directly upon request. Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
+Cobrowse.io is 100% free and easy to try out in your own apps. Please see full documentation at [https://cobrowse.io/docs](https://cobrowse.io/docs).
+
+Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
+
+*Clients may access and integrate full source code for our SDKs directly upon request.*
 
 ## Installation
 
@@ -28,7 +32,7 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        CobrowseIO.instance().license("trial");
+        CobrowseIO.instance().license("<your license key here>");
         CobrowseIO.instance().start(this);
     }
 }
@@ -38,65 +42,58 @@ public class MainApplication extends Application {
 
 ### Add your license key
 
-By default, your app will use our trial license key and trial dashboard at <https://cobrowse.io/trial>.
+Please register an account and generate your free License Key at <https://cobrowse.io/dashboard/settings>.
 
-To use advanced features, such as agent initiated sessions, you need to register for a free account to get your own license key. This will associate sessions from your mobile app with your Cobrowse.io account.
+This will associate sessions from your mobile app with your Cobrowse.io account.
 
 
-## Agent-initiated Sessions
+### Add device metadata 
 
-Without any additional UI or logic in your app, authenticated support agents are able to initiate sessions remotely via our online dashboard. To do this in an efficient way, we send an invisible push notification to the target device with a custom payload.
+To help you identify, search, and filter devices in your Cobrowse dashboard, it's helpful to specify any meaningful metadata. 
 
-To setup agent-initiated sessions:
-
-1. Set up Firebase Cloud Messaging for your app. See the latest Firebase documentation for instructions at <https://firebase.google.com/docs/cloud-messaging/>.
-2. Enter your FCM Server Key from the FCM admin settings into your Cobrowse.io account at https://cobrowse.io/dashboard/settings.
-3. Whenever your device receives a registration token from FCM, pass that to the Cobrowse.io SDK, for example:
+You may add any custom key/value pairs you'd like, and they will all be searchable and filterable in your online dashboard. We've added a few placeholders for convenience only - all fields are optional.
 
 ```java
 package com.example;
 
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
-
+import android.app.Application;
 import io.cobrowse.core.CobrowseIO;
 
-public class FirebaseIdService  extends FirebaseInstanceIdService {
+public class MainApplication extends Application {
 
     @Override
-    public void onTokenRefresh() {
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        CobrowseIO.instance().setDeviceToken(getApplication(), refreshedToken);
-    }
-}
-```
-4. Similarly, whenever you receive a push notification, forward that on to the Cobrowse.io SDK:
+    public void onCreate() {
+        super.onCreate();
 
-```java
-package com.example;
+        CobrowseIO.instance().license("<your license key here>");
 
-import com.google.firebase.messaging.FirebaseMessagingService;
-import com.google.firebase.messaging.RemoteMessage;
+        HashMap<String, Object> customData = new HashMap<>();
+        customData.put("user_id", "<your_user_id>");
+        customData.put("user_name", "<your_user_name>");
+        customData.put("user_email", "<your_user_email>");
+        customData.put("device_id", "<your_device_id>");
+        customData.put("device_name", "<your_device_name>");
+        CobrowseIO.instance().customData(customData);
 
-import io.cobrowse.core.CobrowseIO;
-
-public class FirebaseMessaging extends FirebaseMessagingService {
-
-    @Override
-    public void onMessageReceived(RemoteMessage remoteMessage) {
-        CobrowseIO.instance().onPushNotification(remoteMessage.getData());
+        CobrowseIO.instance().start(this);
     }
 }
 ```
 
-** Free License Key is required to see active devices listed in your account's online dashboard. Sign up at <https://cobrowse.io/register> and see Configuration above.
+## Try it out
 
-## Further Reading
+Once you have your app running in the Android emulator or on a physical device, navigate to <https://cobrowse.io/dashboard> to see your device listed. You can click the "Connect" button to initiate a Cobrowse session!
 
-[User Initiated Sessions](./docs/user-initiated-sessions.md)
+## Optional features
+
+[Initiate sessions with push](https://cobrowse.io/docs#initiate-with-push)
+
+[Use 6-digit codes](https://cobrowse.io/docs#user-generated-codes)
+
+[Redact sensitive data](https://cobrowse.io/docs#redact-sensitive-data)
 
 ## Questions?
-We want to hear from you! Please email us directly at [hello@cobrowse.io](mailto:hello@cobrowse.io).
+Any questions at all? Please email us directly at [hello@cobrowse.io](mailto:hello@cobrowse.io).
 
 ## Requirements
 
