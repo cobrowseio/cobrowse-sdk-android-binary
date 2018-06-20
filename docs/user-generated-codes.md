@@ -1,8 +1,10 @@
+# User-generated codes (optional)
+
 Please see full documentation at [https://cobrowse.io/docs](https://cobrowse.io/docs).
 
 Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
 
-## User-generated codes (optional)
+## Implementation
 
 These are the native-side requirements on Android to initiate sessions using 6-digit codes. More info at <https://cobrowse.io/docs#user-generated-codes>
 

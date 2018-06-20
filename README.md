@@ -86,11 +86,11 @@ Once you have your app running in the Android emulator or on a physical device, 
 
 ## Optional features
 
-[Initiate sessions with push](https://cobrowse.io/docs#initiate-with-push)
+[Initiate sessions with push](./docs/initiate-with-push.md)
 
-[Use 6-digit codes](https://cobrowse.io/docs#user-generated-codes)
+[Use 6-digit codes](./docs/user-initiated-codes.md)
 
-[Redact sensitive data](https://cobrowse.io/docs#redact-sensitive-data)
+[Redact sensitive data](./docs/redact-sensitive-data.md)
 
 ## Questions?
 Any questions at all? Please email us directly at [hello@cobrowse.io](mailto:hello@cobrowse.io).

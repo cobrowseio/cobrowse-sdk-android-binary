@@ -1,8 +1,10 @@
+# Initiate with push (optional)
+
 Please see full documentation at [https://cobrowse.io/docs](https://cobrowse.io/docs).
 
 Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
 
-## Initiate sessions with push (optional)
+## Implementation
 
 These are the native-side requirements on Android to initiate sessions with push. More info at <https://cobrowse.io/docs#initiate-with-push>
 
