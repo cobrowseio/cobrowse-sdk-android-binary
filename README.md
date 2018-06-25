@@ -67,6 +67,8 @@ public class MainApplication extends Application {
 
         CobrowseIO.instance().license("<your license key here>");
 
+        Log.i("App", "Cobrowse device id: " + CobrowseIO.instance().deviceId(this));
+
         HashMap<String, Object> customData = new HashMap<>();
         customData.put("user_id", "<your_user_id>");
         customData.put("user_name", "<your_user_name>");
