@@ -1,6 +1,6 @@
 # Cobrowse.io - Android Native SDK
 
-Cobrowse.io for Android supports API 19 (4.4 KitKat) and above. 
+Cobrowse.io for Android supports API 19 (4.4 KitKat) and above.
 
 Cobrowse.io is 100% free and easy to try out in your own apps. Please see full documentation at [https://cobrowse.io/docs](https://cobrowse.io/docs).
 
@@ -47,9 +47,9 @@ Please register an account and generate your free License Key at <https://cobrow
 This will associate sessions from your mobile app with your Cobrowse.io account.
 
 
-### Add device metadata 
+### Add device metadata
 
-To help you identify, search, and filter devices in your Cobrowse dashboard, it's helpful to specify any meaningful metadata. 
+To help you identify, search, and filter devices in your Cobrowse dashboard, it's helpful to specify any meaningful metadata.
 
 You may add any custom key/value pairs you'd like, and they will all be searchable and filterable in your online dashboard. We've added a few placeholders for convenience only - all fields are optional.
 
@@ -93,6 +93,10 @@ Once you have your app running in the Android emulator or on a physical device, 
 [Use 6-digit codes](./docs/user-generated-codes.md)
 
 [Redact sensitive data](./docs/redact-sensitive-data.md)
+
+[Requiring acceptance from the user](./docs/require-user-consent.md)
+
+[Customizing the interface](./docs/customizing-the-interface.md)
 
 ## Questions?
 Any questions at all? Please email us directly at [hello@cobrowse.io](mailto:hello@cobrowse.io).
