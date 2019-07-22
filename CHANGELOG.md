@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.11.4] - 2019-07-22
+- Using a delegate without implementing RemoteControlDelegate should not prevent control
+
 ## [1.11.3] - 2019-07-15
 - Fix error caused by background job startup ordering
 
