@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.11.5] - 2019-08-09
+- Prevent multiple requests for full screen access at once, plus a few minor bug fixes
+
 ## [1.11.4] - 2019-07-22
 - Using a delegate without implementing RemoteControlDelegate should not prevent control
 
