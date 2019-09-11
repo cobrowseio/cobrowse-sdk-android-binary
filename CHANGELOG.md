@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0] - 2019-09-09
+- BREAKING: Core classes are now under the io.cobrowse namespace rather than io.cobrowse.core
+- BREAKING: Delegate interfaces have been renamed and moved under the io.cobrowse.CobrowseIO namespace:
+            CobrowseIO.SessionRequestDelegate   (previously Session.RequestDelegate)
+            CobrowseIO.SessionControlsDelegate  (previously Session.SessionControlsDelegate)
+            CobrowseIO.RedactionDelegate        (previously Redaction.Delegate)
+- BREAKING: A confirmation prompt is now shown to the user by default when a session is requested.
+            You can disable or change this using the delegate methods above.
+- BREAKING: A foreground service is started on newer versions on Android when a session is started.
+            You can disable or change this using the delegate methods above.
+- BREAKING: Removed remote control delegate methods while we develop an improved API
+
 ## [1.11.5] - 2019-08-09
 - Prevent multiple requests for full screen access at once, plus a few minor bug fixes
 

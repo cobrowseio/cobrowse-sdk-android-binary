@@ -6,14 +6,14 @@ Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#t
 
 ## Implementation
 
-You can fully customize the interface for a Cobrowse session. The SDK provides hooks via `Session.SessionControlsDelegate` for you to render your own interface:
+You can fully customize the interface for a Cobrowse session. The SDK provides hooks via `CobrowseIO.SessionControlsDelegate` for you to render your own interface:
 
 ```java
 package com.example;
 
-import io.cobrowse.core.CobrowseIO;
+import io.cobrowse.CobrowseIO;
 
-public class MainApplication extends Application implements Session.SessionControlsDelegate {
+public class MainApplication extends Application implements CobrowseIO.SessionControlsDelegate {
 
     @Override
     public void onCreate() {
@@ -24,15 +24,13 @@ public class MainApplication extends Application implements Session.SessionContr
     }
 
     @Override
-    public View controlsForSession(final Activity activity, final Session session) {
-        Button content = new Button(activity);
-        content.setBackgroundColor(Color.RED);
-        // also attach listeners etc...
-        content.setText("END");
-        content.setLayoutParams(new FrameLayout.LayoutParams(150, 100));
-        content.setX(50);
-        content.setY(50);
-        return content;
+    public void showSessionControls(final Activity activity, final Session session) {
+        // optionally show your own controls here
+    }
+
+    @Override
+    public void hideSessionControls(final Activity activity, final Session session) {
+        // hide controls created by the method above here
     }
 
     //...

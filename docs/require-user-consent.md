@@ -10,7 +10,7 @@ You may want to ask the user for permission to view their screen before starting
 
 ```java
 
-public class MainApplication extends Application implements Session.RequestDelegate {
+public class MainApplication extends Application implements CobrowseIO.SessionRequestDelegate {
 
     @Override
     public void onCreate() {

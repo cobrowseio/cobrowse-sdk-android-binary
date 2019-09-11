@@ -18,7 +18,7 @@ package com.example;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
-import io.cobrowse.core.CobrowseIO;
+import io.cobrowse.CobrowseIO;
 
 public class FirebaseIdService  extends FirebaseInstanceIdService {
 
@@ -38,7 +38,7 @@ package com.example;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import io.cobrowse.core.CobrowseIO;
+import io.cobrowse.CobrowseIO;
 
 public class FirebaseMessaging extends FirebaseMessagingService {
 

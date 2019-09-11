@@ -14,7 +14,7 @@ Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#t
 ```gradle
 dependencies {
     // ... other dependencies ...
-    implementation 'io.cobrowse:cobrowse-sdk-android:1.+'
+    implementation 'io.cobrowse:cobrowse-sdk-android:2.+'
 }
 ```
 
@@ -24,7 +24,7 @@ To use Cobrowse.io in your project, please add the following lines to your Appli
 package com.example;
 
 import android.app.Application;
-import io.cobrowse.core.CobrowseIO;
+import io.cobrowse.CobrowseIO;
 
 public class MainApplication extends Application {
 
@@ -57,7 +57,7 @@ You may add any custom key/value pairs you'd like, and they will all be searchab
 package com.example;
 
 import android.app.Application;
-import io.cobrowse.core.CobrowseIO;
+import io.cobrowse.CobrowseIO;
 
 public class MainApplication extends Application {
 

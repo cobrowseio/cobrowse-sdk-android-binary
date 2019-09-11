@@ -10,7 +10,7 @@ Redaction allows you to remove specific elements from the agents view. This allo
 
 **1. Define the redacted views in your app source code (recommended)**
 
-Implement the Redaction.Redacted interface on any Activity that contains sensitive views. This interface contains one method:
+Implement the CobrowseIO.Redacted interface on any Activity that contains sensitive views. This interface contains one method:
 
 ```java
 List<View> redactedViews();
