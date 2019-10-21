@@ -72,11 +72,11 @@ public class MainApplication extends Application {
         Log.i("App", "Cobrowse device id: " + CobrowseIO.instance().deviceId(this));
 
         HashMap<String, Object> customData = new HashMap<>();
-        customData.put("user_id", "<your_user_id>");
-        customData.put("user_name", "<your_user_name>");
-        customData.put("user_email", "<your_user_email>");
-        customData.put("device_id", "<your_device_id>");
-        customData.put("device_name", "<your_device_name>");
+        customData.put(CobrowseIO.USER_ID_KEY, "<your_user_id>");
+        customData.put(CobrowseIO.USER_NAME_KEY, "<your_user_name>");
+        customData.put(CobrowseIO.USER_EMAIL_KEY, "<your_user_email>");
+        customData.put(CobrowseIO.DEVICE_ID_KEY, "<your_device_id>");
+        customData.put(CobrowseIO.DEVICE_NAME_KEY, "<your_device_name>");
         CobrowseIO.instance().customData(customData);
 
         CobrowseIO.instance().start(this);
