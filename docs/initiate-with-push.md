@@ -10,27 +10,7 @@ These are the native-side requirements on Android to initiate sessions with push
 
 You must first add Firebase Cloud Messaging (FCM) to your app. Please see FCM documentation at <https://firebase.google.com/docs/cloud-messaging/android/client>.
 
-Next, whenever your device receives a registration token from FCM, pass that to the Cobrowse.io SDK, for example:
-
-```java
-package com.example;
-
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
-
-import io.cobrowse.CobrowseIO;
-
-public class FirebaseIdService  extends FirebaseInstanceIdService {
-
-    @Override
-    public void onTokenRefresh() {
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        CobrowseIO.instance().setDeviceToken(getApplication(), refreshedToken);
-    }
-}
-```
-
-Similarly, whenever you receive a push notification, forward that on to the Cobrowse.io SDK:
+Next, whenever your device receives a registration token or push notification from FCM, pass that to the Cobrowse.io SDK, for example:
 
 ```java
 package com.example;
@@ -46,6 +26,12 @@ public class FirebaseMessaging extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         CobrowseIO.instance().onPushNotification(remoteMessage.getData());
     }
+
+    @Override
+    public void onNewToken(String token) {
+        CobrowseIO.instance().setDeviceToken(getApplication(), token);
+    }
+
 }
 ```
 
