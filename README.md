@@ -6,8 +6,6 @@ Cobrowse.io is 100% free and easy to try out in your own apps. Please see full d
 
 Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
 
-*Enterprise customers may access full source code and self-host upon request.*
-
 ## Installation
 
 **In your app build.gradle**
@@ -40,7 +38,7 @@ public class MainApplication extends Application {
 
 **Important:** Make sure you do this in your custom Application subclass `onCreate()` to ensure devices register in your dashboard right away.
 
-You may also start CobrowseIO in your MainActivity or other Activity if necessary. In that case, the SDK will continue to function even as new Activities are being created and destroyed. 
+You may also start CobrowseIO in your MainActivity or other Activity if necessary. In that case, the SDK will continue to function even as new Activities are being created and destroyed.
 
 ### Add your license key
 
