@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0] - 2019-09-09
+## [2.0.0] - 2019-11-04
 - BREAKING: Core classes are now under the io.cobrowse namespace rather than io.cobrowse.core
 - BREAKING: Delegate interfaces have been renamed and moved under the io.cobrowse.CobrowseIO namespace:
             CobrowseIO.SessionRequestDelegate   (previously Session.RequestDelegate)

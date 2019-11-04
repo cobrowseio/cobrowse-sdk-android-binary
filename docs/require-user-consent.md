@@ -21,7 +21,7 @@ public class MainApplication extends Application implements CobrowseIO.SessionRe
     }
 
     @Override
-    public void handleSessionRequest(Session session) {
+    public void handleSessionRequest(final Activity currentActivity, final Session session) {
         // Do something here, e.g. showing a permission request dialog
         // Make sure to call activate(<callback>) on the session object if
         // you want to start the session.
