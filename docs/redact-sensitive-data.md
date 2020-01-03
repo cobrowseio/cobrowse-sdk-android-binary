@@ -31,3 +31,6 @@ If making changes to your Activity classes isn't an option, we also support a de
 **2. Use the Cobrowse web dashboard to define redacted views**
 
 You can also define redactions using a selector entered into the web dashboard. This can be useful if your app is already in production and you need to redact a field retrospectively, either due to a missed redaction entry in the app build or changing requirements. Visit the [dashboard settings](https://cobrowse.io/dashboard/settings/redaction) to enter redaction selectors.
+
+## Questions?
+Any questions at all? Please email us directly at [hello@cobrowse.io](mailto:hello@cobrowse.io).
