@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.5.0] - 2020-08-24
+- Provides access to agent email when account settings allow
+- Add support for requesting consent before using remote control tools
+
 ## [2.3.0] - 2020-06-23
 - Make license() getter public
 - Android X core 1.3.0
