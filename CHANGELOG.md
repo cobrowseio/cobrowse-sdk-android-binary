@@ -1,10 +1,13 @@
 # Changelog
 
+## [2.12.0] - 2021-06-09
+- Expose full device setter
+
 ## [2.11.0] - 2021-05-21
 - Allow overriding the default remote control consent prompt
 
 ## [2.10.0] - 2021-04-09
-- Expose full device getter/setters
+- Expose full device getter
 
 ## [2.5.0] - 2020-08-24
 - Provides access to agent email when account settings allow
