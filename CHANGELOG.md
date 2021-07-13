@@ -1,24 +1,30 @@
 # Changelog
 
-## [2.12.0] - 2021-06-09
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [2.12.1](#) (2021-07-13)
+- Added experimental support for Surafce based views
+- Improved touch handling for full device control
+
+### [2.12.0] - 2021-06-09
 - Expose full device setter
 
-## [2.11.0] - 2021-05-21
+### [2.11.0] - 2021-05-21
 - Allow overriding the default remote control consent prompt
 
-## [2.10.0] - 2021-04-09
+### [2.10.0] - 2021-04-09
 - Expose full device getter
 
-## [2.5.0] - 2020-08-24
+### [2.5.0] - 2020-08-24
 - Provides access to agent email when account settings allow
 - Add support for requesting consent before using remote control tools
 
-## [2.3.0] - 2020-06-23
+### [2.3.0] - 2020-06-23
 - Make license() getter public
 - Android X core 1.3.0
 - Moved majority of docs to docs.cobrowse.io
 
-## [2.0.0] - 2019-11-04
+### [2.0.0] - 2019-11-04
 - BREAKING: Core classes are now under the io.cobrowse namespace rather than io.cobrowse.core
 - BREAKING: Delegate interfaces have been renamed and moved under the io.cobrowse.CobrowseIO namespace:
             CobrowseIO.SessionRequestDelegate   (previously Session.RequestDelegate)
@@ -30,17 +36,17 @@
             You can disable or change this using the delegate methods above.
 - BREAKING: Removed remote control delegate methods while we develop an improved API
 
-## [1.11.5] - 2019-08-09
+### [1.11.5] - 2019-08-09
 - Prevent multiple requests for full screen access at once, plus a few minor bug fixes
 
-## [1.11.4] - 2019-07-22
+### [1.11.4] - 2019-07-22
 - Using a delegate without implementing RemoteControlDelegate should not prevent control
 
-## [1.11.3] - 2019-07-15
+### [1.11.3] - 2019-07-15
 - Fix error caused by background job startup ordering
 
-## [1.11.1] - 2019-06-21
+### [1.11.1] - 2019-06-21
 - Fix crash on API 19 devices
 
-## [1.11.0] - 2019-06-21
+### [1.11.0] - 2019-06-21
 - Optimisations to rendering process
