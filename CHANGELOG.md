@@ -2,8 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.12.2](#) (2021-09-14)
+
+
+### Bug Fixes
+
+* full-device prompt auto-click on Android 5.1 ([f7712ab](#))
+
 ### [2.12.1](#) (2021-07-13)
-- Added experimental support for Surafce based views
+- Added experimental support for Surface based views
 - Improved touch handling for full device control
 
 ### [2.12.0] - 2021-06-09
