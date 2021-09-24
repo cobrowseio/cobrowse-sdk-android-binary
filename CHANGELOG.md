@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.12.3](#) (2021-09-24)
+
+
+### Bug Fixes
+
+* prevent black screen flashes on the agent side ([71768e5](#))
+* stop automatically accepting all MediaProjection prompts if the current session is not full-device. ([5c7baa6](#))
+* the first frame returned by FullDeviceFrameSource must be dirty. ([1358e16](#))
+
 ### [2.12.2](#) (2021-09-14)
 
 
