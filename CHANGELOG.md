@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.0](#) (2021-10-20)
+
+
+### Features
+
+* disable H.264 encoder on Android 4.4. ([ef8da80](#))
+* implement handling remote 'Enter' key event. ([411878d](#))
+* stop using 'WindowManagerGlobal' private API on Android 10+. ([8b15399](#))
+* target Android 11. ([a019ea6](#))
+
+
+### Bug Fixes
+
+* avoid using Freescale hardware encoder on older platforms. ([2c1e121](#))
+* don't destroy the MediaCodec instance when resetting the encoder. ([e2abcfa](#))
+* IllegalStateException when accessing 'MediaCodec.getOutputFormat()' on Android 4.4. ([44c9827](#))
+* remove deprecated devices from Firebase tests. ([75a54d2](#))
+* remove warning for non-production APIs ([735365c](#))
+* the mediaprojection prompt autoclick on Android 11. ([c167cdc](#))
+
 ### [2.12.3](#) (2021-09-24)
 
 
