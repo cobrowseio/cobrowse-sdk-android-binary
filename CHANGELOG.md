@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.14.0](#) (2021-11-08)
+
+
+### Features
+
+* activate foreground notification on older Android platforms. ([13be810](#))
+* add new Session-related unit tests. ([7aba57f](#))
+
+
+### Bug Fixes
+
+* initialization from a background thread. ([65c68c7](#))
+* never stop CobrowseService before starting it again. ([01d993c](#))
+* unit tests on Kitkat. ([eba17ea](#))
+
 ## [2.13.0](#) (2021-10-20)
 
 
