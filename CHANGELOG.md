@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.14.1](#) (2021-11-15)
+
+
+### Bug Fixes
+
+* initialise custom data as soon as 6 digit code is created ([18b1f0a](#))
+
 ## [2.14.0](#) (2021-11-08)
 
 
