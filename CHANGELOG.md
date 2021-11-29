@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.15.0](#) (2021-11-29)
+
+
+### Features
+
+* activate COLOR_FormatYUV420PackedPlanar. ([d0596bc](#))
+* implement COLOR_FormatYUV420Flexible support. ([b894f75](#))
+* use accessibility API to handle all remote touches in full-device mode. ([c1c0beb](#))
+
+
+### Bug Fixes
+
+* disable COLOR_FormatYUV420SemiPlanar on Google Pixel 3a XL. ([511bcde](#))
+
 ### [2.14.1](#) (2021-11-15)
 
 
