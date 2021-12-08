@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file. See [standa
 ## [2.16.0](#) (2021-12-08)
 
 
+**Special Consideration**
+
+Due to recent Google Play Store policy changes regarding use of the Accessibility Service APIs there are extra changes required to continue using our support for full device remote control. Please follow the docs here to ensure your Accessibility Service will still function: https://docs.cobrowse.io/sdk-features/full-device-capabilities
+
+
 ### Bug Fixes
 
 * don't activate 'android.permission.BIND_ACCESSIBILITY_SERVICE' by default. ([ae0f0f2](#))
