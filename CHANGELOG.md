@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.15.1](#) (2021-12-08)
+
+
+### Bug Fixes
+
+* slow screen update on back navigation. ([ab42339](#))
+* TextureView capture on Android 4.4. ([a8454f5](#))
+
 ## [2.15.0](#) (2021-11-29)
 
 
