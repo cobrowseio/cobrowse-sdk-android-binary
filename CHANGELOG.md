@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.16.0](#) (2021-12-08)
+
+
+### Bug Fixes
+
+* don't activate 'android.permission.BIND_ACCESSIBILITY_SERVICE' by default. ([ae0f0f2](#))
+
 ### [2.15.1](#) (2021-12-08)
 
 
