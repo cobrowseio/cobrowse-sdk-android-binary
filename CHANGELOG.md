@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.17.0](#) (2022-01-28)
+
+
+### Features
+
+* add a reproduction of the issue with android.app.Dialog and 'singleInstance' activity. ([af714f9](#))
+* rearrange the sample app UI. ([e8a5112](#))
+
+
+### Bug Fixes
+
+* Replace AsyncTask with java.util.concurrent classes ([cc71189](#))
+* replace AsyncTask with java.util.concurrent classes. ([5abfefb](#))
+* skip custom data updates that match the cached version ([2559433](#))
+
 ## [2.16.0](#) (2021-12-08)
 
 
