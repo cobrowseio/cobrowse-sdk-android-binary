@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.17.2](#) (2022-01-31)
+
+
+### Bug Fixes
+
+* dynamically update full_device_control in device info on session object ([b9b3919](#))
+
 ### [2.17.1](#) (2022-01-31)
 
 
