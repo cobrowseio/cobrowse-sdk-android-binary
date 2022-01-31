@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.17.1](#) (2022-01-31)
+
+
+### Bug Fixes
+
+* add DPI-specific notification icons. ([280c61f](#))
+* add missing 'android:exported' attribute to all SDK components. ([834764c](#))
+* crash on Android 12 if a session is activated in background. ([04dfbef](#))
+* get rid of redundant process lifecycle listener. ([a4c7ed3](#))
+* specify the mutability flag in the notification PendingIntent. ([daf14b5](#))
+
 ## [2.17.0](#) (2022-01-28)
 
 
