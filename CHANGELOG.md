@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.18.1](#) (2022-02-07)
+
+
+### Bug Fixes
+
+* only call loaded event after call completes ([63f26a0](#))
+
 ## [2.18.0](#) (2022-02-02)
 
 
