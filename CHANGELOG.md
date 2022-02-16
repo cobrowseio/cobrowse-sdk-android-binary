@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.18.2](#) (2022-02-16)
+
+
+### Bug Fixes
+
+* Fix untrusted touch events being blocked on Android 12  ([#117](#)) ([f4f4ebe](#))
+
 ### [2.18.1](#) (2022-02-07)
 
 
