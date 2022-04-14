@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.19.0](#) (2022-04-14)
+
+
+### Features
+
+* automatically accept the MediaProjection permission prompt only if the SDK is configured to do so. ([0fcefa4](#))
+
+
+### Bug Fixes
+
+* add the customer Proguard/R8 rules. ([c2c9f47](#))
+
 ### [2.18.2](#) (2022-02-16)
 
 
