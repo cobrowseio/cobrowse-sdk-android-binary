@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.20.0](#) (2022-04-19)
+
+
+### Features
+
+* expose new full device APIs ([0434b23](#))
+* set full_device state as enum properties ([9f29087](#))
+
+
+### Bug Fixes
+
+* use full device requested as default value for old servers ([2ac28a8](#))
+
 ## [2.19.0](#) (2022-04-14)
 
 
