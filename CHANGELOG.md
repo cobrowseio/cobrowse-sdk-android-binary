@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.20.1](#) (2022-04-26)
+
+
+### Bug Fixes
+
+* trigger a new full device permission prompt the first time it is used in each session ([2187be6](#))
+
 ## [2.20.0](#) (2022-04-19)
 
 
