@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.3](#) (2022-05-06)
+
+
+### Bug Fixes
+
+* redact all scroll content in ScrollViews ([cc66ce5](#))
+
 ### [2.21.2](#) (2022-05-06)
 
 
