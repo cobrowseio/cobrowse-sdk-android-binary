@@ -2,91 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.21.0](#) (2022-05-06)
+
+
+### Features
+
+* set a device token to lock sessions to the device
+
+
+### Bug Fixes
+
+* extend redaction overlays
+* fix H264 encoder on Google Pixel devices with Android 12.
+
 ### [2.20.1](#) (2022-04-26)
 
 
 ### Bug Fixes
 
-* trigger a new full device permission prompt the first time it is used in each session ([2187be6](#))
+* trigger a new full device permission prompt the first time it is used in each session
 
 ## [2.20.0](#) (2022-04-19)
 
 
 ### Features
 
-* expose new full device APIs ([0434b23](#))
-* set full_device state as enum properties ([9f29087](#))
+* expose new full device APIs
+* set full_device state as enum properties
 
 
 ### Bug Fixes
 
-* use full device requested as default value for old servers ([2ac28a8](#))
+* use full device requested as default value for old servers
 
 ## [2.19.0](#) (2022-04-14)
 
 
 ### Features
 
-* automatically accept the MediaProjection permission prompt only if the SDK is configured to do so. ([0fcefa4](#))
+* automatically accept the MediaProjection permission prompt only if the SDK is configured to do so.
 
 
 ### Bug Fixes
 
-* add the customer Proguard/R8 rules. ([c2c9f47](#))
+* add the customer Proguard/R8 rules.
 
 ### [2.18.2](#) (2022-02-16)
 
 
 ### Bug Fixes
 
-* Fix untrusted touch events being blocked on Android 12  ([#117](#)) ([f4f4ebe](#))
+* Fix untrusted touch events being blocked on Android 12
 
 ### [2.18.1](#) (2022-02-07)
 
 
 ### Bug Fixes
 
-* only call loaded event after call completes ([63f26a0](#))
+* only call loaded event after call completes
 
 ## [2.18.0](#) (2022-02-02)
 
 
 ### Features
 
-* add delegate method that's called the first time a session is fetched from the server ([f01ef09](#))
+* add delegate method that's called the first time a session is fetched from the server
 
 ### [2.17.2](#) (2022-01-31)
 
 
 ### Bug Fixes
 
-* dynamically update full_device_control in device info on session object ([b9b3919](#))
+* dynamically update full_device_control in device info on session object
 
 ### [2.17.1](#) (2022-01-31)
 
 
 ### Bug Fixes
 
-* add DPI-specific notification icons. ([280c61f](#))
-* add missing 'android:exported' attribute to all SDK components. ([834764c](#))
-* crash on Android 12 if a session is activated in background. ([04dfbef](#))
-* get rid of redundant process lifecycle listener. ([a4c7ed3](#))
-* specify the mutability flag in the notification PendingIntent. ([daf14b5](#))
+* add DPI-specific notification icons.
+* add missing 'android:exported' attribute to all SDK components.
+* crash on Android 12 if a session is activated in background.
+* get rid of redundant process lifecycle listener.
+* specify the mutability flag in the notification PendingIntent.
 
 ## [2.17.0](#) (2022-01-28)
 
 
 ### Features
 
-* add a reproduction of the issue with android.app.Dialog and 'singleInstance' activity. ([af714f9](#))
-* rearrange the sample app UI. ([e8a5112](#))
+* rearrange the sample app UI.
 
 
 ### Bug Fixes
 
-* Replace AsyncTask with java.util.concurrent classes ([cc71189](#))
-* replace AsyncTask with java.util.concurrent classes. ([5abfefb](#))
-* skip custom data updates that match the cached version ([2559433](#))
+* Replace AsyncTask with java.util.concurrent classes
+* skip custom data updates that match the cached version
 
 ## [2.16.0](#) (2021-12-08)
 
@@ -98,87 +109,83 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 
 ### Bug Fixes
 
-* don't activate 'android.permission.BIND_ACCESSIBILITY_SERVICE' by default. ([ae0f0f2](#))
+* don't activate 'android.permission.BIND_ACCESSIBILITY_SERVICE' by default.
 
 ### [2.15.1](#) (2021-12-08)
 
 
 ### Bug Fixes
 
-* slow screen update on back navigation. ([ab42339](#))
-* TextureView capture on Android 4.4. ([a8454f5](#))
+* slow screen update on back navigation.
+* TextureView capture on Android 4.4.
 
 ## [2.15.0](#) (2021-11-29)
 
 
 ### Features
 
-* activate COLOR_FormatYUV420PackedPlanar. ([d0596bc](#))
-* implement COLOR_FormatYUV420Flexible support. ([b894f75](#))
-* use accessibility API to handle all remote touches in full-device mode. ([c1c0beb](#))
+* activate COLOR_FormatYUV420PackedPlanar.
+* implement COLOR_FormatYUV420Flexible support.
+* use accessibility API to handle all remote touches in full-device mode.
 
 
 ### Bug Fixes
 
-* disable COLOR_FormatYUV420SemiPlanar on Google Pixel 3a XL. ([511bcde](#))
+* disable COLOR_FormatYUV420SemiPlanar on Google Pixel 3a XL.
 
 ### [2.14.1](#) (2021-11-15)
 
 
 ### Bug Fixes
 
-* initialise custom data as soon as 6 digit code is created ([18b1f0a](#))
+* initialise custom data as soon as 6 digit code is created.
 
 ## [2.14.0](#) (2021-11-08)
 
 
 ### Features
 
-* activate foreground notification on older Android platforms. ([13be810](#))
-* add new Session-related unit tests. ([7aba57f](#))
+* activate foreground notification on older Android platforms.
 
 
 ### Bug Fixes
 
-* initialization from a background thread. ([65c68c7](#))
-* never stop CobrowseService before starting it again. ([01d993c](#))
-* unit tests on Kitkat. ([eba17ea](#))
+* run initialization from a background thread.
+* never stop CobrowseService before starting it again.
 
 ## [2.13.0](#) (2021-10-20)
 
 
 ### Features
 
-* disable H.264 encoder on Android 4.4. ([ef8da80](#))
-* implement handling remote 'Enter' key event. ([411878d](#))
-* stop using 'WindowManagerGlobal' private API on Android 10+. ([8b15399](#))
-* target Android 11. ([a019ea6](#))
+* disable H.264 encoder on Android 4.4.
+* implement handling remote 'Enter' key event.
+* stop using 'WindowManagerGlobal' private API on Android 10+.
+* target Android 11.
 
 
 ### Bug Fixes
 
-* avoid using Freescale hardware encoder on older platforms. ([2c1e121](#))
-* don't destroy the MediaCodec instance when resetting the encoder. ([e2abcfa](#))
-* IllegalStateException when accessing 'MediaCodec.getOutputFormat()' on Android 4.4. ([44c9827](#))
-* remove deprecated devices from Firebase tests. ([75a54d2](#))
-* remove warning for non-production APIs ([735365c](#))
-* the mediaprojection prompt autoclick on Android 11. ([c167cdc](#))
+* avoid using Freescale hardware encoder on older platforms.
+* don't destroy the MediaCodec instance when resetting the encoder.
+* IllegalStateException when accessing 'MediaCodec.getOutputFormat()' on Android 4.4.
+* remove warning for non-production APIs
+* fix the mediaprojection prompt autoclick on Android 11. ([c167cdc](#))
 
 ### [2.12.3](#) (2021-09-24)
 
 
 ### Bug Fixes
 
-* prevent black screen flashes on the agent side ([71768e5](#))
-* stop automatically accepting all MediaProjection prompts if the current session is not full-device. ([5c7baa6](#))
-* the first frame returned by FullDeviceFrameSource must be dirty. ([1358e16](#))
+* prevent black screen flashes on the agent side
+* stop automatically accepting all MediaProjection prompts if the current session is not full-device.
 
 ### [2.12.2](#) (2021-09-14)
 
 
 ### Bug Fixes
 
-* full-device prompt auto-click on Android 5.1 ([f7712ab](#))
+* full-device prompt auto-click on Android 5.1
 
 ### [2.12.1](#) (2021-07-13)
 - Added experimental support for Surface based views
