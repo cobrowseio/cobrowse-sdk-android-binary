@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.2](#) (2022-05-06)
+
+
+### Bug Fixes
+
+* extend redaction overlays in scroll containers ([d2e7bec](#))
+
 ### [2.21.1](#) (2022-05-06)
 
 ## [2.21.0](#) (2022-05-06)
