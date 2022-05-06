@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.1](#) (2022-05-06)
+
 ## [2.21.0](#) (2022-05-06)
 
 
@@ -12,7 +14,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* extend redaction overlays
 * fix H264 encoder on Google Pixel devices with Android 12.
 
 ### [2.20.1](#) (2022-04-26)
