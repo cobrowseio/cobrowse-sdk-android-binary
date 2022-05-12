@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.4](#) (2022-05-12)
+
+
+### Bug Fixes
+
+* add support for redacting horizontal scroll views ([4b7cbd8](#))
+
 ### [2.21.3](#) (2022-05-06)
 
 
