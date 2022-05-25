@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.5](#) (2022-05-25)
+
+
+### Bug Fixes
+
+* add support for redacting NestedScrollViews. ([de54c26](#))
+* don't set profile and level on MSM8996 devices with Android 8. ([9f16851](#))
+* remote drawing is not showing properly when device the refresh rate changes. ([a2f6452](#))
+
 ### [2.21.4](#) (2022-05-12)
 
 
