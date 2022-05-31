@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.21.6](#) (2022-05-31)
+
+
+### Bug Fixes
+
+* fix a case that could potentially cause duplicate full device prompts to be shown ([ecd0ff9](#))
+
 ### [2.21.5](#) (2022-05-25)
 
 
