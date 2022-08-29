@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.22.0](#) (2022-08-29)
+
+
+### Features
+
+* SDK now targets Android 12 (API 31). ([d821ec7](#))
+
+
+### Bug Fixes
+
+* automatically accept the MediaProjection prompt on Android 12L in the accessibility service. ([529f838](#))
+* don't use `COLOR_FormatYUV420SemiPlanar` on Android 12 and newer. ([c249a6d](#))
+* H264 encoder on HTC 10 and Sharp SH-01L. ([6fae952](#))
+
 ### [2.21.6](#) (2022-05-31)
 
 
