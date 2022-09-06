@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.23.0](#) (2022-09-06)
+
+
+### Features
+
+* allow customization of full device request behavior. ([35a75ba](#))
+
+
+### Bug Fixes
+
+* redaction overlay not appearing on TextView/EditText which have both `android:gravity="end"` and `android:singleLine="true"` attributes set. ([fffaca3](#))
+* remote redaction not applying to fragment dialogs. ([e207bd0](#))
+
 ## [2.22.0](#) (2022-08-29)
 
 
