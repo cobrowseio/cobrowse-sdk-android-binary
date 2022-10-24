@@ -1,48 +1,16 @@
 # Cobrowse.io - Android Native SDK
 
-Cobrowse.io is 100% free and easy to try out in your own apps. Please see full documentation at [https://docs.cobrowse.io](https://docs.cobrowse.io).
+Cobrowse.io is 100% free and easy to try out in your own apps.
 
-Try our **online demo** at the bottom of our homepage at <https://cobrowse.io/#tryit>.
+Register an account at [https://cobrowse.io/register](https://cobrowse.io/register).
+
+Please see **full documentation** at [https://docs.cobrowse.io](https://docs.cobrowse.io).
+
+Try our **online demo** at <https://cobrowse.io/demo>.
 
 ## Installation
 
-**In your app build.gradle**
-```gradle
-dependencies {
-    // ... other dependencies ...
-    implementation 'io.cobrowse:cobrowse-sdk-android:2.+'
-}
-```
-
-To use Cobrowse.io in your project, please add the following lines to your Application subclass.
-
-```java
-package com.example;
-
-import android.app.Application;
-import io.cobrowse.CobrowseIO;
-
-public class MainApplication extends Application {
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        CobrowseIO.instance().license("<your license key here>");
-        CobrowseIO.instance().start(this);
-    }
-}
-```
-
-**Important:** Make sure you do this in your custom Application subclass `onCreate()` to ensure devices register in your dashboard right away.
-
-You may also start CobrowseIO in your MainActivity or other Activity if necessary. In that case, the SDK will continue to function even as new Activities are being created and destroyed.
-
-### Add your license key
-
-Please register an account and generate your free License Key at <https://cobrowse.io/dashboard/settings>.
-
-This will associate sessions from your mobile app with your Cobrowse.io account.
+See the [installation documentation](https://docs.cobrowse.io/sdk-installation/android) to get started.
 
 ## Try it out
 
