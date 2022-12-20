@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.23.5](#) (2022-12-20)
+
+
+### Bug Fixes
+
+* bug when SDK does not accept API URL with a trailing slash ([#162](#)) ([fe2f3fc](#))
+* networking concurrency issue that may throw `NullPointerException` invoking `int java.util.Timer.purge()` on a null object reference ([#170](#)) ([1c4681b](#))
+
 ### [2.23.4](#) (2022-11-08)
 
 ### [2.23.3](#) (2022-11-08)
