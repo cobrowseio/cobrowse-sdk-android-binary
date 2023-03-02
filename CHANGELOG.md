@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.24.0](#) (2023-03-02)
+
+
+### Features
+
+* allow new sessions to preempt existing ones ([5a80566](#))
+* Capabilities support ([#175](#)) ([551ba76](#))
+* support non-FQDN socket URLs ([50698a2](#))
+
+
+### Bug Fixes
+
+* registration job ID misuse ([#173](#)) ([838e7ce](#))
+
 ### [2.23.5](#) (2022-12-20)
 
 
