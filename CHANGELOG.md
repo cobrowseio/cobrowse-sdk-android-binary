@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.25.1](#) (2023-03-13)
+
+## [2.25.0](#) (2023-03-12)
+
+
+### Features
+
+* Support unredaction as a first class SDK feature ([#178](#)) ([92f4dfa](#))
+
 ## [2.24.0](#) (2023-03-02)
 
 
