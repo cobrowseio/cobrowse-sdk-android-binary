@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.25.2](#) (2023-04-13)
+
+
+### Bug Fixes
+
+* Fix capabilities state in full-device mode ([#183](#)) ([ead57b5](#))
+
 ### [2.25.1](#) (2023-03-13)
 
 ## [2.25.0](#) (2023-03-12)
