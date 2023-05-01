@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.26.0](#) (2023-05-01)
+
+
+### Bug Fixes
+
+* finish `CobrowseAccessibilitySetup` activity after opening the system settings ([#185](#)) ([8fb5e30](#))
+
 ### [2.25.2](#) (2023-04-13)
 
 
