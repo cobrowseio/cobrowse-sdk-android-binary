@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.28.0](#) (2023-06-30)
+
+
+### Features
+
+* Android 14 (API 34) support ([#192](#)) ([0dbc7ee](#))
+* Implement redaction within WebViews ([#187](#)) ([73c28da](#))
+
 ## [2.27.0](#) (2023-06-05)
 
 
