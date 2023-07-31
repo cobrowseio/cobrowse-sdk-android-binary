@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.28.1](#) (2023-07-31)
+
+
+### Bug Fixes
+
+* explicitly set layout of View when redacting webview in react native ([#197](#)) ([2422bc0](#))
+
 ## [2.28.0](#) (2023-06-30)
 
 

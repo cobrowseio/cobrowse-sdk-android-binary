@@ -3,8 +3,8 @@
   <groupId>io.cobrowse</groupId>
   <artifactId>cobrowse-sdk-android</artifactId>
   <versioning>
-    <latest>2.28.0</latest>
-    <release>2.28.0</release>
+    <latest>2.28.1</latest>
+    <release>2.28.1</release>
     <versions>
       <version>0.0.1</version>
       <version>0.0.2</version>
@@ -159,7 +159,8 @@
       <version>2.26.0</version>
       <version>2.27.0</version>
       <version>2.28.0</version>
+      <version>2.28.1</version>
     </versions>
-    <lastUpdated>20230630080728</lastUpdated>
+    <lastUpdated>20230731163837</lastUpdated>
   </versioning>
 </metadata>
