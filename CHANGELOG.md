@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.28.2](#) (2023-08-07)
+
+
+### Bug Fixes
+
+* meet new requirements for foreground service on Android 14 ([#196](#)) ([1d9d7fe](#))
+* use a different default session indicator in the multi-window mode ([#198](#)) ([eaad75e](#))
+
 ### [2.28.1](#) (2023-07-31)
 
 
