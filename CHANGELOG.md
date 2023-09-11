@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.29.0](#) (2023-09-11)
+
+
+### Features
+
+* add new method `CobrowseIO#setDeviceToken()` which does not require an applicaiton instance ([#204](#)) ([aa4956c](#))
+* SDK now targets Android 13 (API 33) ([#203](#)) ([aea9f40](#))
+
+
+### Bug Fixes
+
+* use sdk capabilities when not available from the server ([#211](#)) ([1b9eb3d](#))
+
 ### [2.28.2](#) (2023-08-07)
 
 
