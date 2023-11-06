@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.cobrowse</groupId>
+  <artifactId>cobrowse-sdk-android</artifactId>
+  <version>2.30.1</version>
+  <packaging>aar</packaging>
+  <name>cobrowse-sdk-android</name>
+  <description>Cobrowse.io - Android Native SDK</description>
+  <url>https://cobrowse.io</url>
+  <organization>
+    <name>Cobrowse.io LLC</name>
+    <url>https://cobrowse.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>cobrowse.io</id>
+      <organization>Cobrowse.io LLC</organization>
+      <organizationUrl>https://cobrowse.io</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:github.com/cobrowseio/cobrowse-sdk-android-binary.git</connection>
+    <developerConnection>scm:git:ssh://github.com/cobrowseio/cobrowse-sdk-android-binary.git</developerConnection>
+    <url>https://github.com/cobrowseio/cobrowse-sdk-android-binary</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.constraintlayout</groupId>
+      <artifactId>constraintlayout</artifactId>
+      <version>2.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>3.12.13</version>
+    </dependency>
+    <dependency>
+      <groupId>com.upokecenter</groupId>
+      <artifactId>cbor</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-process</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.webkit</groupId>
+      <artifactId>webkit</artifactId>
+      <version>1.4.0</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.30.1](#) (2023-11-06)
+
+
+### Bug Fixes
+
+* clear `currentSession()` if an error is returned ([#212](#)) ([037a254](#))
+* declare `ACCESS_NETWORK_STATE` permission requirement ([#218](#)) ([1d22031](#))
+
 ## [2.30.0](#) (2023-10-02)
 
 
