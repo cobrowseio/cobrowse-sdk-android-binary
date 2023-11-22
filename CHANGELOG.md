@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.30.2](#) (2023-11-22)
+
+
+### Bug Fixes
+
+* WebView redaction not working in a ConstaintLayout container ([#225](#)) ([c511d1d](#))
+
 ### [2.30.1](#) (2023-11-06)
 
 
