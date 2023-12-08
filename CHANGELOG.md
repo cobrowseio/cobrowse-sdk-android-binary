@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.30.3](#) (2023-12-08)
+
+
+### Bug Fixes
+
+* error when redacting a scroll container which is not a `ViewGroup` ([#226](#)) ([9b1b0ca](#))
+
 ### [2.30.2](#) (2023-11-22)
 
 
