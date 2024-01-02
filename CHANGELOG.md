@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.30.4](#) (2024-01-02)
+
+
+### Bug Fixes
+
+* SDK not refreshing frames correctly when a camera preview is shown ([#229](#)) ([1f2c18e](#))
+
 ### [2.30.3](#) (2023-12-08)
 
 
