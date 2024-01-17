@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.31.1](#) (2024-01-17)
+
+## [2.31.0](#) (2024-01-17)
+
+
+### Features
+
+* let agents to type passwords into secure input fields in the full device mode ([#231](#)) ([0d23d8c](#))
+
 ### [2.30.4](#) (2024-01-02)
 
 
