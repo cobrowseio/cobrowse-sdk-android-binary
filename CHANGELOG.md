@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.32.0](#) (2024-02-07)
+
+
+### Features
+
+* make `CobrowseService` removable ([#236](#)) ([269d3e4](#))
+
 ### [2.31.1](#) (2024-01-17)
 
 ## [2.31.0](#) (2024-01-17)
