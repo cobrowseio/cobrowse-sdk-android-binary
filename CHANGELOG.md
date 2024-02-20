@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.32.2](#) (2024-02-20)
+
+
+### Bug Fixes
+
+* ensure webview is redacted while calculating webview redaction even if the webview itself is unredacted ([#237](#)) ([7cc04ea](#))
+
 ### [2.32.1](#) (2024-02-20)
 
 
