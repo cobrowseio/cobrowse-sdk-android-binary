@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.32.1](#) (2024-02-20)
+
+
+### Bug Fixes
+
+* issue when a session is changed from a push notification received in a background thread ([#234](#)) ([9a8ca86](#))
+
 ## [2.32.0](#) (2024-02-07)
 
 
