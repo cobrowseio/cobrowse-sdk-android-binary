@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.33.0](#) (2024-04-03)
+
+
+### Features
+
+* implement redaction for Jetpack Compose UI ([#232](#)) ([749745d](#))
+
+
+### Bug Fixes
+
+* crash when rendering a window with a hardware bitmap on it ([#238](#)) ([8db83d4](#))
+
 ### [2.32.2](#) (2024-02-20)
 
 
