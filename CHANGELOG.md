@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.33.1](#) (2024-04-22)
+
+
+### Bug Fixes
+
+* prefer `COLOR_FormatYUV420Flexible` color format when possible ([#240](#)) ([6dde2e9](#))
+
 ## [2.33.0](#) (2024-04-03)
 
 
