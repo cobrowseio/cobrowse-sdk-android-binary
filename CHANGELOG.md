@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.34.0](#) (2024-06-05)
+
+
+### Features
+
+* Android 15 support; target Android 14 ([#243](#)) ([d866903](#))
+* force webviews to LAYER_TYPE_NONE while in session ([#256](#)) ([7074f0c](#))
+
+
+### Bug Fixes
+
+* auto-accepting the media projection prompt on Samsung with Android 14 ([#253](#)) ([53a4e28](#))
+* disable overscroll when in session to prevent leaking sensitive data on full device mode ([#259](#)) ([ccc81ce](#))
+* don't use the broken H264 encoder on Raspberry ([#254](#)) ([b91157e](#))
+* improve webview redaction with better handling of scroll state mismatches ([#258](#)) ([d14141d](#))
+* reduce number of suppressed frames on global layouts ([804c32c](#))
+* reduce redaction flicker caused by redacted webviews ([#249](#)) ([23e0528](#))
+* stop frames being rescheduled early too frequently ([ee281b8](#))
+
 ### [2.33.1](#) (2024-04-22)
 
 
