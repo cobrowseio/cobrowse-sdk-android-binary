@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.34.1](#) (2024-07-03)
+
+
+### Bug Fixes
+
+* auto-accept the media projection prompt on Google Pixel phones with Android 14 ([#262](#)) ([ad0040e](#))
+* avoid rendering incomplete frames if a hardware bitmap is on the screen ([#267](#)) ([8aaac21](#))
+* ensure we don't untrack webviews if they are still visible ([#265](#)) ([8704ae0](#))
+* update the CBOR Java dependency to `4.5.4` to fix CVE-2024-23684 ([#268](#)) ([62df3a1](#))
+
 ## [2.34.0](#) (2024-06-05)
 
 
