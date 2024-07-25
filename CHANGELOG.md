@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.34.2](#) (2024-07-25)
+
+
+### Bug Fixes
+
+* fix WebView over-redaction with ComposeUI ([#271](#)) ([ed4dc44](#))
+* the SDK now asks for the redacted views on scroll events ([#269](#)) ([488e926](#))
+
 ### [2.34.1](#) (2024-07-03)
 
 
