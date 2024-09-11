@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.35.0](#) (2024-09-11)
+
+
+### Features
+
+* add Redaction index to improve selector performance ([#273](#)) ([933f297](#))
+* single level dashboard selector support for Compose UI ([#275](#)) ([b92ff62](#))
+
 ### [2.34.3](#) (2024-08-27)
 
 ### [2.34.2](#) (2024-07-25)
