@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.35.1](#) (2024-09-14)
+
+
+### Bug Fixes
+
+* optimisation for dashboard selectors ([abce2de](#))
+
 ## [2.35.0](#) (2024-09-11)
 
 
