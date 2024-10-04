@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.36.0](#) (2024-10-04)
+
+
+### Features
+
+* add selector parsing in SDK ([#276](#)) ([5c90d87](#))
+
 ### [2.35.2](#) (2024-09-26)
 
 
