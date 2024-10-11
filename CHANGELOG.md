@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.36.1](#) (2024-10-11)
+
+
+### Bug Fixes
+
+* **remote_control:** Restore keypress capability ([#277](#)) ([a893b53](#))
+
 ## [2.36.0](#) (2024-10-04)
 
 
