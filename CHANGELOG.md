@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.37.1](#) (2024-10-29)
+
+## [2.37.0](#) (2024-10-29)
+
+
+### Features
+
+* introduce Kotlin compiler plugin and Gradle build plugin for compose UI redaction automation ([#272](#)) ([9756bf9](#))
+
 ### [2.36.1](#) (2024-10-11)
 
 
