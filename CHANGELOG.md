@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.37.2](#) (2024-10-30)
+
+
+### Bug Fixes
+
+* ComposeUI semantics naming ([#279](#)) ([711a229](#))
+
 ### [2.37.1](#) (2024-10-29)
 
 ## [2.37.0](#) (2024-10-29)
