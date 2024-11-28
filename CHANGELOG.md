@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.38.0](#) (2024-11-28)
+
+
+### Features
+
+* ensure that SDK callbacks are invoked on the main thread  ([#283](#)) ([b892ab4](#))
+* target Android 14 (API 34) ([a249039](#))
+
+
+### Bug Fixes
+
+* rendering error with Compose `GraphicsLayer` API ([#284](#)) ([055cadf](#))
+
 ### [2.37.3](#) (2024-10-31)
 
 ### [2.37.2](#) (2024-10-30)

@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.cobrowse",
+    "module": "cobrowse-sdk-android-kotlin-plugin",
+    "version": "2.38.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-kotlin-plugin-2.38.0.jar",
+          "url": "cobrowse-sdk-android-kotlin-plugin-2.38.0.jar",
+          "size": 29352,
+          "sha512": "300e7d3ee6add5b378e2324ff4ab130babb0f12cc5338a46f96e50a031acf45c4307e073e6da6d20ac62c9ddbd549ab210eccca1f53f86b3feefdd2453495fa0",
+          "sha256": "29dbfe701347a4cf734b0bb1eb753e6e2954363f113d6b0e63cb87b21a4b50e0",
+          "sha1": "3c2a20e0132872c52c1817c22c5bcbe3e5b48bc9",
+          "md5": "6deac343c848114d6f55010851f6ae6e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-kotlin-plugin-2.38.0.jar",
+          "url": "cobrowse-sdk-android-kotlin-plugin-2.38.0.jar",
+          "size": 29352,
+          "sha512": "300e7d3ee6add5b378e2324ff4ab130babb0f12cc5338a46f96e50a031acf45c4307e073e6da6d20ac62c9ddbd549ab210eccca1f53f86b3feefdd2453495fa0",
+          "sha256": "29dbfe701347a4cf734b0bb1eb753e6e2954363f113d6b0e63cb87b21a4b50e0",
+          "sha1": "3c2a20e0132872c52c1817c22c5bcbe3e5b48bc9",
+          "md5": "6deac343c848114d6f55010851f6ae6e"
+        }
+      ]
+    }
+  ]
+}
