@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.cobrowse</groupId>
+  <artifactId>cobrowse-sdk-android-gradle-plugin</artifactId>
+  <version>2.39.0</version>
+  <name>cobrowse-sdk-android-gradle-plugin</name>
+  <description>Cobrowse.io - Android Gradle build plugin</description>
+  <url>https://cobrowse.io</url>
+  <organization>
+    <name>Cobrowse.io LLC</name>
+    <url>https://cobrowse.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>cobrowse.io</id>
+      <organization>Cobrowse.io LLC</organization>
+      <organizationUrl>https://cobrowse.io</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:github.com/cobrowseio/cobrowse-sdk-android-binary.git</connection>
+    <developerConnection>scm:git:ssh://github.com/cobrowseio/cobrowse-sdk-android-binary.git</developerConnection>
+    <url>https://github.com/cobrowseio/cobrowse-sdk-android-binary</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.android.tools.build</groupId>
+      <artifactId>gradle</artifactId>
+      <version>8.3.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-gradle-plugin</artifactId>
+      <version>1.9.22</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

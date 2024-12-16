@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.39.0](#) (2024-12-16)
+
+
+### Features
+
+* add support for `Modifier.testTag("")` in automated selectors for Compose UI ([#295](#)) ([5344b4f](#))
+
 ## [2.38.0](#) (2024-11-28)
 
 
