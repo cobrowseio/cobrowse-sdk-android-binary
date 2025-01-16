@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.39.1](#) (2025-01-16)
+
+
+### Bug Fixes
+
+* allow events with integer values ([#299](#)) ([d9c2cdb](#))
+* redaction selectors for Compose UI not being injected into anonymous blocks ([#301](#)) ([24e0716](#))
+
 ## [2.39.0](#) (2024-12-16)
 
 
