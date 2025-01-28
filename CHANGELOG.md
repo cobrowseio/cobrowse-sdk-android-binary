@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](#) (2025-01-28)
+
+
+### Bug Fixes
+
+* compatibility issues with Kotlin 2.0 in the compiler plugin ([#308](#)) ([93571c1](#))
+
 ### [3.0.1](#) (2025-01-28)
 
 
