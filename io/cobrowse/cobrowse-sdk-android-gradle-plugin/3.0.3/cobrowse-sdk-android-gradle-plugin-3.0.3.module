@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.cobrowse",
+    "module": "cobrowse-sdk-android-gradle-plugin",
+    "version": "3.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-gradle-plugin-3.0.3.jar",
+          "url": "cobrowse-sdk-android-gradle-plugin-3.0.3.jar",
+          "size": 10141,
+          "sha512": "c86f5769f91f8db1fc10278c127fe2899af6f8bb9185e3bf93528500b63b68eae3ed7c00599aa9efff097af50c8d4264b843688aaf3ec12fe7acc535ceb6a5f4",
+          "sha256": "dd4b95f21d80b80ff02d46cda62b55e2ed5aa2febe0a037cb59765a9c02d2f6f",
+          "sha1": "a2055ee62c43159b36b32d9dc8b13f4cfb6e4b3a",
+          "md5": "a2b875589dd70d096b0c1a7d6350be3c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "8.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "1.9.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-gradle-plugin-3.0.3.jar",
+          "url": "cobrowse-sdk-android-gradle-plugin-3.0.3.jar",
+          "size": 10141,
+          "sha512": "c86f5769f91f8db1fc10278c127fe2899af6f8bb9185e3bf93528500b63b68eae3ed7c00599aa9efff097af50c8d4264b843688aaf3ec12fe7acc535ceb6a5f4",
+          "sha256": "dd4b95f21d80b80ff02d46cda62b55e2ed5aa2febe0a037cb59765a9c02d2f6f",
+          "sha1": "a2055ee62c43159b36b32d9dc8b13f4cfb6e4b3a",
+          "md5": "a2b875589dd70d096b0c1a7d6350be3c"
+        }
+      ]
+    }
+  ]
+}
