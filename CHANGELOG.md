@@ -2,76 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [3.0.2](#) (2025-01-28)
+### [2.39.2](#) (2025-01-29)
 
 
 ### Bug Fixes
 
-* compatibility issues with Kotlin 2.0 in the compiler plugin ([#308](#)) ([93571c1](#))
+* compatibility issues with Kotlin 2.0 in the compiler plugin ([#309](#)) ([70e20ef](#))
 
-### [3.0.1](#) (2025-01-28)
-
-
-### Features
-
-* allow disabling injecting automated Compose UI redaction selectors if selector is already set in the code ([#304](#)) ([805f746](#))
-
-## [3.0.0](#) (2025-01-27)
-
-
-### ⚠ BREAKING CHANGES
-
-* Compose UI support: the `redacted()` modifier for Compose UI was renamed to `cobrowseRedacted()` to prevent naming clashes with other libraries
-* Remove default code and session UI (#298)
-* SDK now invokes delegate methods, including session consent delegate, even when there no activity running. These delegates are: `SessionRequestDelegate`, `RemoteControlRequestDelegate`, `FullDeviceRequestDelegate`. This allows handling some requests while the app is backgrounded.
-* the SDK now tracks application and activity objects from your app automatically. You don't have to pass them manually.
-* `customData` is now restricted to string values only
-
-**Before**
-```java
-CobrowseIO.instance().customData(new HashMap<String, Object>() {{
-    put(CobrowseIO.USER_EMAIL_KEY, "android@example.com");
-    put(CobrowseIO.DEVICE_NAME_KEY, "Android Demo");
-    put("your-own-key2", 42);
-}});
-```
-
-**After**
-```java
-CobrowseIO.instance().customData(Map.of(
-        CobrowseIO.USER_EMAIL_KEY, "android@example.com",
-        CobrowseIO.DEVICE_NAME_KEY, "Android Demo",
-        "your-own-key2", "42"
-));
-```
-* Removes the boolean versions of the fullDevice setter / getters. You should now use the more descriptive enum versions instead.
-* Updated the minimum support Cobrowse API version to 1.21.0
-* The built-in intercom integration support has been removed. To continue to support cobrowse Intercom integrations in your apps please set an Intercom user property called `CobrowseID` to the `CobrowseIO.instance().deviceId()` value, like so:
-
-```java
-Intercom.client().updateUser(
-        new UserAttributes.Builder()
-                .withCustomAttributes(Map.of("CobrowseID", CobrowseIO.instance().deviceId()))
-                .build());
-```
-
-### Features
-
-* allow verbose logging in the Gradle build plugin ([#300](#)) ([e98bd15](#))
-* call delegate methods when no activity is running ([#297](#)) ([ffcbfb7](#))
-* only allow strings as customData ([#287](#)) ([53610c5](#))
-* Remove automatic intercom integration ([#288](#)) ([f216763](#))
-* Remove bool versions of full device ([#290](#)) ([966dcb1](#))
-* Remove default code and session UI ([#298](#)) ([9bd7148](#))
-* remove deprecated Cobrowse APIs which required `Application` / `Activity` instances. ([#291](#)) ([b9eb9e6](#))
-* Rename `redacted` Compose UI modifier to `cobrowseRedacted` ([#286](#)) ([8e67de2](#))
-* Update minimum API version to 1.21.0 ([#289](#)) ([07cea76](#))
+### [2.39.1](#) (2025-01-16)
 
 
 ### Bug Fixes
 
 * allow events with integer values ([#299](#)) ([d9c2cdb](#))
-* redaction selectors for Compose UI not being injected into anonymous blocks ([#301](#)) ([fc7984a](#))
+* redaction selectors for Compose UI not being injected into anonymous blocks ([#301](#)) ([24e0716](#))
 
 ## [2.39.0](#) (2024-12-16)
 
