@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](#) (2025-02-04)
+
+
+### Features
+
+* add `CobrowseIO.okHttpClient()` method to let the host app provide its own `OkHttpClient` instance ([#313](#)) ([2e7dc69](#))
+* unify `Modifier.cobrowseSelector()` with `Modifier.cobrowseAutomatedSelector()` ([#306](#)) ([f5bf22a](#))
+
+
+### Bug Fixes
+
+* remote control back event not handled if "predictive back" feature is enabled ([#312](#)) ([a4f3a94](#))
+
 ### [3.0.3](#) (2025-01-29)
 
 ### [3.0.2](#) (2025-01-28)
