@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](#) (2025-02-11)
+
+
+### Features
+
+* Android 16 Beta 1 support ([#285](#)) ([9701328](#))
+
+
+### Bug Fixes
+
+* fix incorrect bounds of redaction overlay on multi-line `EditText` ([#314](#)) ([613c741](#))
+
 ## [3.1.0](#) (2025-02-04)
 
 
