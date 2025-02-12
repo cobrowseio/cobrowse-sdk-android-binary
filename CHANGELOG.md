@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.1](#) (2025-02-12)
+
+
+### Bug Fixes
+
+* keep a more consistent Modifier chain in Compose UI for redaction overlays ([#316](#)) ([347022f](#))
+
 ## [3.2.0](#) (2025-02-11)
 
 
