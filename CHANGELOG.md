@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](#) (2025-02-27)
+
+
+### Features
+
+* add support for multi-level redaction selectors in Compose UI ([#318](#)) ([1a8f5fc](#))
+* add support to arrows and rectangles drawings ([#317](#)) ([bec9df2](#))
+* use Kotlin 2.0 ([#307](#)) ([65f6f9f](#))
+
 ### [3.2.1](#) (2025-02-12)
 
 
