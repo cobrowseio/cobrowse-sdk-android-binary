@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](#) (2025-03-05)
+
+
+### Features
+
+* allow additional Compose redaction selector attributes be set in Gradle configuration ([#321](#)) ([1d99fe0](#))
+
+
+### Bug Fixes
+
+* reduce overhead of Compose redaction modifiers ([#320](#)) ([f3e00b5](#))
+
 ## [3.3.0](#) (2025-02-27)
 
 
