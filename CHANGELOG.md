@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](#) (2025-04-01)
+
+
+### Features
+
+* add playground support for Compose UI ([#331](#)) ([4abac21](#))
+* add support for different tool colors and disappearing ink drawings ([#323](#)) ([fcf8611](#))
+* support unredaction for Jetpack Compose UI ([#325](#)) ([f650010](#))
+
+
+### Bug Fixes
+
+* make `defaultAttributes` an ordinary map type ([#327](#)) ([b2e0921](#))
+* throw an exception when trying to set an invalid redaction selector ([#330](#)) ([9803a6c](#))
+* treat ID in selectors as `id` property of `attributes` ([#332](#)) ([f9fb701](#))
+
 ### [3.4.1](#) (2025-03-11)
 
 ## [3.4.0](#) (2025-03-05)
