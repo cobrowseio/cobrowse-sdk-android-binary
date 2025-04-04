@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.1](#) (2025-04-04)
+
+
+### Bug Fixes
+
+* avoid injecting redundant `cobrowseSelector()` modifiers ([#335](#)) ([4923673](#))
+* extract `testTag` modifier value if it's behind `Modifier.then` ([#336](#)) ([75dac37](#))
+
 ## [3.5.0](#) (2025-04-01)
 
 
