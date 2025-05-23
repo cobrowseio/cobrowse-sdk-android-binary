@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](#) (2025-05-23)
+
+
+### Features
+
+* webview domain redaction config from sdk ([#339](#)) ([0c7a163](#))
+
+
+### Bug Fixes
+
+* extract `testTag` value if it's inside `remember` function ([#347](#)) ([ff3c877](#))
+
 ## [3.6.0](#) (2025-04-08)
 
 
