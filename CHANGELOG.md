@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.1](#) (2025-05-26)
+
+
+### Bug Fixes
+
+* improve extracting properties for `cobrowseSelector` modifier ([#349](#)) ([0d1fe1f](#))
+
 ## [3.7.0](#) (2025-05-23)
 
 
