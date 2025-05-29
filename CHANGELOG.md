@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [3.7.1](#) (2025-05-26)
+## [3.8.0](#) (2025-05-29)
+
+
+### Features
+
+* add `selectorSources` configuration option to disable replication of certain selector parts ([#352](#)) ([0287a42](#))
+* session quality monitoring ([#346](#)) ([96de876](#))
 
 
 ### Bug Fixes
 
-* improve extracting properties for `cobrowseSelector` modifier ([#349](#)) ([0d1fe1f](#))
+* improve extracting properties for `cobrowseSelector` modifier ([#349](#)) ([eea1198](#))
 
 ## [3.7.0](#) (2025-05-23)
 
