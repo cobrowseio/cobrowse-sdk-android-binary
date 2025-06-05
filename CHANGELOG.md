@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.8.1](#) (2025-06-05)
+
+
+### Bug Fixes
+
+* add support for elvis `?:` and safe call `?.` operators in the Kotlin compiler plugin ([#353](#)) ([c484f59](#))
+
 ## [3.8.0](#) (2025-05-29)
 
 
