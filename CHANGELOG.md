@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.8.2](#) (2025-06-16)
+
+
+### Bug Fixes
+
+* add support for extension functions﻿ in the Kotlin compiler plugin ([#354](#)) ([1bf870b](#))
+
 ### [3.8.1](#) (2025-06-05)
 
 
