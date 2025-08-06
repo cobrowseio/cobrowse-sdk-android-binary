@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.9.1](#) (2025-08-06)
+
+## [3.9.0](#) (2025-08-06)
+
+
+### Features
+
+* add playground support for Android views ([#338](#)) ([d97abb0](#))
+* Compose UI redaction API is now stable ([#357](#)) ([181c030](#))
+
+
+### Bug Fixes
+
+* don't treat missing ID or content description as `"null"` string literal ([#359](#)) ([44d3fd6](#))
+* Support new versions of RN webview ([#361](#)) ([48b9e60](#))
+
 ### [3.8.2](#) (2025-06-16)
 
 
