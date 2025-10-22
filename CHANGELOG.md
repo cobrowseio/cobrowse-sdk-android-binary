@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.10.0](#) (2025-10-22)
+
+
+### Features
+
+* collect extra attributes from Android view ([#364](#)) ([647af36](#))
+* expose `ended_reason` on Session ([#369](#)) ([664afd6](#))
+* target Android 15 (API 35) ([#366](#)) ([6672fda](#))
+* update OkHttp dependency to `4.12.0` ([#355](#)) ([74e4c68](#))
+
+
+### Bug Fixes
+
+* full_device should switch to On when the user has accepted the system prompt, not immediately ([#363](#)) ([2ba4a10](#))
+* remote control with `android.widget.PopupWindow` ([#371](#)) ([131de1e](#))
+
 ### [3.9.1](#) (2025-08-06)
 
 ## [3.9.0](#) (2025-08-06)
