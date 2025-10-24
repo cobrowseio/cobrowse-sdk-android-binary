@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.11.0](#) (2025-10-24)
+
+
+### Features
+
+* expose session timestamps ([#377](#)) ([1aeb0fa](#))
+
 ## [3.10.0](#) (2025-10-22)
 
 
@@ -12,6 +19,21 @@ All notable changes to this project will be documented in this file. See [standa
 * target Android 15 (API 35) ([#366](#)) ([6672fda](#))
 * update OkHttp dependency to `4.12.0` ([#355](#)) ([74e4c68](#))
 
+com.squareup.okhttp3:okhttp dependency has been upgraded from 3.12.13 to 4.12.0 due to security concerns, in particular CVE-2021-0341, CVE-2023-0833, CVE-2023-3635.
+
+OkHttp 3.12.13 was the latest version that supports Android 4.4. In order to continue to use Cobrowse SDK on Android 4.4 consider force-downgrading OkHttp dependency in your own app:
+```
+dependencies {
+    implementation("com.squareup.okhttp3:okhttp:3.12.13")
+}
+
+
+configurations.all {
+    resolutionStrategy {
+        force("com.squareup.okhttp3:okhttp:3.12.13")
+    }
+}
+```
 
 ### Bug Fixes
 
