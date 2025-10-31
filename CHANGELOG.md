@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.12.0](#) (2025-10-31)
+
+
+### Features
+
+* handle shadow roots in webview redaction ([#379](#)) ([3f321ab](#))
+* Improve rendering performance ([#381](#)) ([7957c2b](#))
+
 ## [3.11.0](#) (2025-10-24)
 
 
