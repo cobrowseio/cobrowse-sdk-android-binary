@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.12.1](#) (2025-11-14)
+
+
+### Bug Fixes
+
+* downscale frames on a background thread ([#382](#)) ([b403c7b](#))
+* encoders no longer encode frames unessasarily ([#386](#)) ([406db4f](#))
+* lower the Kotlin dependency to `1.6.21` in the main SDK ([#383](#)) ([a7bf754](#))
+* reduce the number of view traversal operation if no redaction selector is set ([#385](#)) ([80ca78a](#))
+
 ## [3.12.0](#) (2025-10-31)
 
 
