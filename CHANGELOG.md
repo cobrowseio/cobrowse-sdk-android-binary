@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.12.2](#) (2025-11-19)
+
+
+### Bug Fixes
+
+* Add performance logging for main frame loop components ([#387](#)) ([49e82d2](#))
+
 ### [3.12.1](#) (2025-11-14)
 
 
