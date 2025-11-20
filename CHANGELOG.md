@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.12.3](#) (2025-11-20)
+
+
+### Bug Fixes
+
+* prevent concurrent encoding of bitmap during redering ([#389](#)) ([35b5218](#))
+
 ### [3.12.2](#) (2025-11-19)
 
 
