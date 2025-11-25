@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.12.4](#) (2025-11-25)
+
+
+### Bug Fixes
+
+* make sure an explicitly unredacted view is never redacted ([#392](#)) ([a9b7810](#))
+* reduce per-frame allocations when encoding frames ([#390](#)) ([fd97721](#))
+
 ### [3.12.3](#) (2025-11-20)
 
 

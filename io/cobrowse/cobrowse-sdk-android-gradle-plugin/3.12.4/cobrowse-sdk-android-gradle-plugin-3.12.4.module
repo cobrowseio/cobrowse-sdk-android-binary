@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.cobrowse",
+    "module": "cobrowse-sdk-android-gradle-plugin",
+    "version": "3.12.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-gradle-plugin-3.12.4.jar",
+          "url": "cobrowse-sdk-android-gradle-plugin-3.12.4.jar",
+          "size": 17661,
+          "sha512": "22e2e2bacbf26c762a41e1f9d386689e162791ffd022511b0be2d1407b94e66537d26884f04cf8986ee94c2d9e3a2bb08b9fef0f3fbc8bd1d54a74ab1c6dd4ab",
+          "sha256": "c91f58a628c544317e73ec149ba9e9face3fa1a46ab3809860a23abd8beb421e",
+          "sha1": "0057ded00013d8b9e02d4ee9f8a8832b64ecb2e4",
+          "md5": "ddbfb5edcfafc1e5294e618f2f5d9636"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "8.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cobrowse-sdk-android-gradle-plugin-3.12.4.jar",
+          "url": "cobrowse-sdk-android-gradle-plugin-3.12.4.jar",
+          "size": 17661,
+          "sha512": "22e2e2bacbf26c762a41e1f9d386689e162791ffd022511b0be2d1407b94e66537d26884f04cf8986ee94c2d9e3a2bb08b9fef0f3fbc8bd1d54a74ab1c6dd4ab",
+          "sha256": "c91f58a628c544317e73ec149ba9e9face3fa1a46ab3809860a23abd8beb421e",
+          "sha1": "0057ded00013d8b9e02d4ee9f8a8832b64ecb2e4",
+          "md5": "ddbfb5edcfafc1e5294e618f2f5d9636"
+        }
+      ]
+    }
+  ]
+}
