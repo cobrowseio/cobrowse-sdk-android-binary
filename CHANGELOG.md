@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.13.0](#) (2026-01-15)
+
+
+### Features
+
+* Introduce `WebViewRedactionFactoryDelegate` ([#393](#)) ([7039859](#))
+
+
+### Bug Fixes
+
+* print a warning log message if Coil image loading library uses hardware bitmaps ([#384](#)) ([e8e4a9d](#))
+
 ### [3.12.4](#) (2025-11-25)
 
 
