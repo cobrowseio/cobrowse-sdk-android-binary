@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.13.1](#) (2026-01-20)
+
+
+### Bug Fixes
+
+* abstract frame loop scheduling ([3a12727](#))
+* **experimental:** introduce additional scale value ([#398](#)) ([48e46f4](#))
+
 ## [3.13.0](#) (2026-01-15)
 
 
