@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.13.2](#) (2026-01-29)
+
+
+### Bug Fixes
+
+* resolution not updating when the device rotates in full-device mode on Android 14 (API 34) and above ([#397](#)) ([a16a6f7](#))
+
 ### [3.13.1](#) (2026-01-20)
 
 
