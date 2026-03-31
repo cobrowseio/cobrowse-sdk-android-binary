@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.13.3](#) (2026-03-31)
+
+
+### Bug Fixes
+
+* improve TextureView rendering ([676b1df](#))
+* move write to buffer ([#408](#)) ([88a6e19](#))
+* reduce allocations in selector matching logic ([#414](#)) ([f412ddc](#))
+* respect `APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND` in the default session indicator ([#425](#)) ([9dfb87c](#))
+
 ### [3.13.2](#) (2026-01-29)
 
 
