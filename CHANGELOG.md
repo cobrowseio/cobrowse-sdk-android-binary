@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.14.0](#) (2026-05-30)
+
+
+### Features
+
+* default to scaling method 1 (`DURING_RENDER`) ([#441](#)) ([39def98](#))
+* downscale `SurfaceView` in rendering ([#438](#)) ([31e4558](#))
+
 ### [3.13.4](#) (2026-04-16)
 
 ### [3.13.3](#) (2026-03-31)
