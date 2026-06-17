@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.14.2](#) (2026-06-17)
+
+
+### Bug Fixes
+
+* never serialize a null `attributes` map on the view hierarchy channel ([#449](#)) ([01f93da](#))
+
 ### [3.14.1](#) (2026-06-10)
 
 
