@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.14.3](#) (2026-07-01)
+
+
+### Bug Fixes
+
+* auto-accept the full-device system prompt on Motorola devices with Android 15 ([#451](#)) ([47b28e3](#))
+
 ### [3.14.2](#) (2026-06-17)
 
 
