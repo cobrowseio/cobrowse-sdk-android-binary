@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.15.0](#) (2026-07-15)
+
+
+### Features
+
+* Add laser pointer ripples ([#454](#)) ([8e19168](#))
+
+
+### Bug Fixes
+
+* ensure that the calculated latency is returned when a message tracking is concluded ([#452](#)) ([ab3febb](#))
+
 ### [3.14.3](#) (2026-07-01)
 
 
