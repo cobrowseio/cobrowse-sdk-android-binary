@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.16.0](#) (2026-07-29)
+
+
+### Features
+
+* add support for Kotlin 2.1.0 - 2.4.0 ([#447](#)) ([366328e](#))
+
+
+### Bug Fixes
+
+* error message in the Gradle plugin about SDK versions mismatch ([#458](#)) ([f40f710](#))
+* Prevent duplicate `handleRemoteControlRequest` & `handleFullDeviceRequest` delegate calls ([#456](#)) ([080026a](#))
+* Rate limit 6-digit code creation ([#459](#)) ([dd8e63f](#))
+* respect bubble rounded corners in the default session indicator on Android 17 ([#433](#)) ([3da334b](#))
+
 ## [3.15.0](#) (2026-07-15)
 
 
