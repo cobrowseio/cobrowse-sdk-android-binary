@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.17.0](#) (2026-08-11)
+
+
+### Features
+
+* device metrics ([#468](#)) ([8abe4a0](#))
+* indicate redacted nodes in the view hierarchy ([#461](#)) ([d972542](#))
+
+
+### Bug Fixes
+
+* frames can stop updating in full-device on some devices ([#469](#)) ([a4641c6](#))
+* improve error messages about incorrect SDK setup ([#464](#)) ([84cb043](#))
+
 ## [3.16.0](#) (2026-07-29)
 
 
