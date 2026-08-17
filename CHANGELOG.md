@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.17.1](#) (2026-08-17)
+
+
+### Bug Fixes
+
+* make the Compose SDK require Kotlin 2.0 ([#472](#)) ([535a874](#))
+
 ## [3.17.0](#) (2026-08-11)
 
 
