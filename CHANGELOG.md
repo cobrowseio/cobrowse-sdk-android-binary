@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.17.2](#) (2026-08-21)
+
+
+### Bug Fixes
+
+* workaround a WebKit bug that can affect webview redaction overlays ([#476](#)) ([4806526](#))
+
 ### [3.17.1](#) (2026-08-17)
 
 
