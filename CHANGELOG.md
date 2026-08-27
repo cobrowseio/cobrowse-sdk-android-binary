@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.18.0](#) (2026-08-27)
+
+
+### Features
+
+* introduce `View.cobrowseRedacted()` and `View.cobrowseUnredacted()` extension functions ([#481](#)) ([acab55d](#))
+
+
+### Bug Fixes
+
+* correct displaced webview content in software capture caused by Android WebView bug ([#484](#)) ([87973a3](#))
+* pin Kotlin 2.0 in `cobrowse-sdk-android-gradle-plugin` and `cobrowse-sdk-android-kotlin-plugin` ([#473](#)) ([77b8bff](#))
+* promote unredacted siblings in webview ([#479](#)) ([b459da4](#))
+
 ### [3.17.3](#) (2026-08-21)
 
 
