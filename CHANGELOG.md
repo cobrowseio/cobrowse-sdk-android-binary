@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.18.1](#) (2026-09-01)
+
+
+### Bug Fixes
+
+* misaligned WebView redactions when the WebView is inside a container with padding ([#486](#)) ([c466070](#))
+
 ## [3.18.0](#) (2026-08-27)
 
 
