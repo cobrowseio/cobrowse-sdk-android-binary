@@ -2,213 +2,235 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [3.18.1](#) (2026-09-01)
-
-
-### Bug Fixes
-
-* misaligned WebView redactions when the WebView is inside a container with padding ([#486](#)) ([c466070](#))
-
-## [3.18.0](#) (2026-08-27)
+## [3.19.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.19.0) (2026-10-09)
 
 
 ### Features
 
-* introduce `View.cobrowseRedacted()` and `View.cobrowseUnredacted()` extension functions ([#481](#)) ([acab55d](#))
+* capture secondary displays in the full-device mode using the accessibility service
+* introduce `Application.rootViews()` extension function
+* introduce `RedactionDelegate#redactedViews(Application)` and `UnredactionDelegate#unredactedViews(Application)`
 
 
 ### Bug Fixes
 
-* correct displaced webview content in software capture caused by Android WebView bug ([#484](#)) ([87973a3](#))
-* pin Kotlin 2.0 in `cobrowse-sdk-android-gradle-plugin` and `cobrowse-sdk-android-kotlin-plugin` ([#473](#)) ([77b8bff](#))
-* promote unredacted siblings in webview ([#479](#)) ([b459da4](#))
+* agent video falling further behind the longer an Android session runs
+* auto-accept the MediaProjection prompt in the accessibility service in multi-display environments on Android 16 QPR1+ and Android 17
+* don't show "Choose app" option in the full-device prompt
+* duplicate `android:name` attribute in the `lollipop` manifest
+* edit password fields at the cursor and stop fast typing resetting them
+* inject every remote tap in full-device mode, not only those after a pointer move
+* never redact the SDK-owned views (agent annotations, default session indicator)
+* pin `minCompileSdk` to 19 in the published AAR metadata
+* remote keys not reaching Compose text fields in full-device mode
 
-### [3.17.3](#) (2026-08-21)
-
-
-### Bug Fixes
-
-* improve event monitor for webviews ([#482](#)) ([6b6645c](#))
-
-### [3.17.2](#) (2026-08-21)
-
-
-### Bug Fixes
-
-* workaround a WebKit bug that can affect webview redaction overlays ([#476](#)) ([4806526](#))
-
-### [3.17.1](#) (2026-08-17)
+### [3.18.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.18.1) (2026-09-01)
 
 
 ### Bug Fixes
 
-* make the Compose SDK require Kotlin 2.0 ([#472](#)) ([535a874](#))
+* misaligned WebView redactions when the WebView is inside a container with padding
 
-## [3.17.0](#) (2026-08-11)
+## [3.18.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.18.0) (2026-08-27)
 
 
 ### Features
 
-* device metrics ([#468](#)) ([8abe4a0](#))
-* indicate redacted nodes in the view hierarchy ([#461](#)) ([d972542](#))
+* introduce `View.cobrowseRedacted()` and `View.cobrowseUnredacted()` extension functions
 
 
 ### Bug Fixes
 
-* frames can stop updating in full-device on some devices ([#469](#)) ([a4641c6](#))
-* improve error messages about incorrect SDK setup ([#464](#)) ([84cb043](#))
+* correct displaced webview content in software capture caused by Android WebView bug
+* pin Kotlin 2.0 in `cobrowse-sdk-android-gradle-plugin` and `cobrowse-sdk-android-kotlin-plugin`
+* promote unredacted siblings in webview
 
-## [3.16.0](#) (2026-07-29)
+### [3.17.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.17.3) (2026-08-21)
+
+
+### Bug Fixes
+
+* improve event monitor for webviews
+
+### [3.17.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.17.2) (2026-08-21)
+
+
+### Bug Fixes
+
+* workaround a WebKit bug that can affect webview redaction overlays
+
+### [3.17.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.17.1) (2026-08-17)
+
+
+### Bug Fixes
+
+* make the Compose SDK require Kotlin 2.0
+
+## [3.17.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.17.0) (2026-08-11)
 
 
 ### Features
 
-* add support for Kotlin 2.1.0 - 2.4.0 ([#447](#)) ([366328e](#))
+* device metrics
+* indicate redacted nodes in the view hierarchy
 
 
 ### Bug Fixes
 
-* error message in the Gradle plugin about SDK versions mismatch ([#458](#)) ([f40f710](#))
-* Prevent duplicate `handleRemoteControlRequest` & `handleFullDeviceRequest` delegate calls ([#456](#)) ([080026a](#))
-* Rate limit 6-digit code creation ([#459](#)) ([dd8e63f](#))
-* respect bubble rounded corners in the default session indicator on Android 17 ([#433](#)) ([3da334b](#))
+* frames can stop updating in full-device on some devices
+* improve error messages about incorrect SDK setup
 
-## [3.15.0](#) (2026-07-15)
+## [3.16.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.16.0) (2026-07-29)
 
 
 ### Features
 
-* Add laser pointer ripples ([#454](#)) ([8e19168](#))
+* add support for Kotlin 2.1.0 - 2.4.0
 
 
 ### Bug Fixes
 
-* ensure that the calculated latency is returned when a message tracking is concluded ([#452](#)) ([ab3febb](#))
+* error message in the Gradle plugin about SDK versions mismatch
+* Prevent duplicate `handleRemoteControlRequest` & `handleFullDeviceRequest` delegate calls
+* Rate limit 6-digit code creation
+* respect bubble rounded corners in the default session indicator on Android 17
 
-### [3.14.3](#) (2026-07-01)
-
-
-### Bug Fixes
-
-* auto-accept the full-device system prompt on Motorola devices with Android 15 ([#451](#)) ([47b28e3](#))
-
-### [3.14.2](#) (2026-06-17)
-
-
-### Bug Fixes
-
-* never serialize a null `attributes` map on the view hierarchy channel ([#449](#)) ([01f93da](#))
-
-### [3.14.1](#) (2026-06-10)
-
-
-### Bug Fixes
-
-* selectors failing to match against `id` ([#448](#)) ([985be91](#))
-
-## [3.14.0](#) (2026-05-30)
+## [3.15.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.15.0) (2026-07-15)
 
 
 ### Features
 
-* default to scaling method 1 (`DURING_RENDER`) ([#441](#)) ([39def98](#))
-* downscale `SurfaceView` in rendering ([#438](#)) ([31e4558](#))
-
-### [3.13.4](#) (2026-04-16)
-
-### [3.13.3](#) (2026-03-31)
+* Add laser pointer ripples
 
 
 ### Bug Fixes
 
-* improve TextureView rendering ([676b1df](#))
-* move write to buffer ([#408](#)) ([88a6e19](#))
-* reduce allocations in selector matching logic ([#414](#)) ([f412ddc](#))
-* respect `APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND` in the default session indicator ([#425](#)) ([9dfb87c](#))
+* ensure that the calculated latency is returned when a message tracking is concluded
 
-### [3.13.2](#) (2026-01-29)
+### [3.14.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.14.3) (2026-07-01)
 
 
 ### Bug Fixes
 
-* resolution not updating when the device rotates in full-device mode on Android 14 (API 34) and above ([#397](#)) ([a16a6f7](#))
+* auto-accept the full-device system prompt on Motorola devices with Android 15
 
-### [3.13.1](#) (2026-01-20)
+### [3.14.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.14.2) (2026-06-17)
 
 
 ### Bug Fixes
 
-* abstract frame loop scheduling ([3a12727](#))
-* **experimental:** introduce additional scale value ([#398](#)) ([48e46f4](#))
+* never serialize a null `attributes` map on the view hierarchy channel
 
-## [3.13.0](#) (2026-01-15)
+### [3.14.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.14.1) (2026-06-10)
+
+
+### Bug Fixes
+
+* selectors failing to match against `id`
+
+## [3.14.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.14.0) (2026-05-30)
 
 
 ### Features
 
-* Introduce `WebViewRedactionFactoryDelegate` ([#393](#)) ([7039859](#))
+* default to scaling method 1 (`DURING_RENDER`)
+* downscale `SurfaceView` in rendering
+
+### [3.13.4](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.13.4) (2026-04-16)
+
+### [3.13.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.13.3) (2026-03-31)
 
 
 ### Bug Fixes
 
-* print a warning log message if Coil image loading library uses hardware bitmaps ([#384](#)) ([e8e4a9d](#))
+* improve TextureView rendering
+* move write to buffer
+* reduce allocations in selector matching logic
+* respect `APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND` in the default session indicator
 
-### [3.12.4](#) (2025-11-25)
-
-
-### Bug Fixes
-
-* make sure an explicitly unredacted view is never redacted ([#392](#)) ([a9b7810](#))
-* reduce per-frame allocations when encoding frames ([#390](#)) ([fd97721](#))
-
-### [3.12.3](#) (2025-11-20)
+### [3.13.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.13.2) (2026-01-29)
 
 
 ### Bug Fixes
 
-* prevent concurrent encoding of bitmap during redering ([#389](#)) ([35b5218](#))
+* resolution not updating when the device rotates in full-device mode on Android 14 (API 34) and above
 
-### [3.12.2](#) (2025-11-19)
-
-
-### Bug Fixes
-
-* Add performance logging for main frame loop components ([#387](#)) ([49e82d2](#))
-
-### [3.12.1](#) (2025-11-14)
+### [3.13.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.13.1) (2026-01-20)
 
 
 ### Bug Fixes
 
-* downscale frames on a background thread ([#382](#)) ([b403c7b](#))
-* encoders no longer encode frames unessasarily ([#386](#)) ([406db4f](#))
-* lower the Kotlin dependency to `1.6.21` in the main SDK ([#383](#)) ([a7bf754](#))
-* reduce the number of view traversal operation if no redaction selector is set ([#385](#)) ([80ca78a](#))
+* abstract frame loop scheduling
+* **experimental:** introduce additional scale value
 
-## [3.12.0](#) (2025-10-31)
+## [3.13.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.13.0) (2026-01-15)
 
 
 ### Features
 
-* handle shadow roots in webview redaction ([#379](#)) ([3f321ab](#))
-* Improve rendering performance ([#381](#)) ([7957c2b](#))
+* Introduce `WebViewRedactionFactoryDelegate`
 
-## [3.11.0](#) (2025-10-24)
+
+### Bug Fixes
+
+* print a warning log message if Coil image loading library uses hardware bitmaps
+
+### [3.12.4](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.12.4) (2025-11-25)
+
+
+### Bug Fixes
+
+* make sure an explicitly unredacted view is never redacted
+* reduce per-frame allocations when encoding frames
+
+### [3.12.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.12.3) (2025-11-20)
+
+
+### Bug Fixes
+
+* prevent concurrent encoding of bitmap during redering
+
+### [3.12.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.12.2) (2025-11-19)
+
+
+### Bug Fixes
+
+* Add performance logging for main frame loop components
+
+### [3.12.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.12.1) (2025-11-14)
+
+
+### Bug Fixes
+
+* downscale frames on a background thread
+* encoders no longer encode frames unessasarily
+* lower the Kotlin dependency to `1.6.21` in the main SDK
+* reduce the number of view traversal operation if no redaction selector is set
+
+## [3.12.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.12.0) (2025-10-31)
 
 
 ### Features
 
-* expose session timestamps ([#377](#)) ([1aeb0fa](#))
+* handle shadow roots in webview redaction
+* Improve rendering performance
 
-## [3.10.0](#) (2025-10-22)
+## [3.11.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.11.0) (2025-10-24)
 
 
 ### Features
 
-* collect extra attributes from Android view ([#364](#)) ([647af36](#))
-* expose `ended_reason` on Session ([#369](#)) ([664afd6](#))
-* target Android 15 (API 35) ([#366](#)) ([6672fda](#))
-* update OkHttp dependency to `4.12.0` ([#355](#)) ([74e4c68](#))
+* expose session timestamps
+
+## [3.10.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.10.0) (2025-10-22)
+
+
+### Features
+
+* collect extra attributes from Android view
+* expose `ended_reason` on Session
+* target Android 15 (API 35)
+* update OkHttp dependency to `4.12.0`
 
 com.squareup.okhttp3:okhttp dependency has been upgraded from 3.12.13 to 4.12.0 due to security concerns, in particular CVE-2021-0341, CVE-2023-0833, CVE-2023-3635.
 
@@ -228,167 +250,167 @@ configurations.all {
 
 ### Bug Fixes
 
-* full_device should switch to On when the user has accepted the system prompt, not immediately ([#363](#)) ([2ba4a10](#))
-* remote control with `android.widget.PopupWindow` ([#371](#)) ([131de1e](#))
+* full_device should switch to On when the user has accepted the system prompt, not immediately
+* remote control with `android.widget.PopupWindow`
 
-### [3.9.1](#) (2025-08-06)
+### [3.9.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.9.1) (2025-08-06)
 
-## [3.9.0](#) (2025-08-06)
-
-
-### Features
-
-* add playground support for Android views ([#338](#)) ([d97abb0](#))
-* Compose UI redaction API is now stable ([#357](#)) ([181c030](#))
-
-
-### Bug Fixes
-
-* don't treat missing ID or content description as `"null"` string literal ([#359](#)) ([44d3fd6](#))
-* Support new versions of RN webview ([#361](#)) ([48b9e60](#))
-
-### [3.8.2](#) (2025-06-16)
-
-
-### Bug Fixes
-
-* add support for extension functions﻿ in the Kotlin compiler plugin ([#354](#)) ([1bf870b](#))
-
-### [3.8.1](#) (2025-06-05)
-
-
-### Bug Fixes
-
-* add support for elvis `?:` and safe call `?.` operators in the Kotlin compiler plugin ([#353](#)) ([c484f59](#))
-
-## [3.8.0](#) (2025-05-29)
+## [3.9.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.9.0) (2025-08-06)
 
 
 ### Features
 
-* add `selectorSources` configuration option to disable replication of certain selector parts ([#352](#)) ([0287a42](#))
-* session quality monitoring ([#346](#)) ([96de876](#))
+* add playground support for Android views
+* Compose UI redaction API is now stable
 
 
 ### Bug Fixes
 
-* improve extracting properties for `cobrowseSelector` modifier ([#349](#)) ([eea1198](#))
+* don't treat missing ID or content description as `"null"` string literal
+* Support new versions of RN webview
 
-## [3.7.0](#) (2025-05-23)
+### [3.8.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.8.2) (2025-06-16)
+
+
+### Bug Fixes
+
+* add support for extension functions﻿ in the Kotlin compiler plugin
+
+### [3.8.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.8.1) (2025-06-05)
+
+
+### Bug Fixes
+
+* add support for elvis `?:` and safe call `?.` operators in the Kotlin compiler plugin
+
+## [3.8.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.8.0) (2025-05-29)
 
 
 ### Features
 
-* webview domain redaction config from sdk ([#339](#)) ([0c7a163](#))
+* add `selectorSources` configuration option to disable replication of certain selector parts
+* session quality monitoring
 
 
 ### Bug Fixes
 
-* extract `testTag` value if it's inside `remember` function ([#347](#)) ([ff3c877](#))
+* improve extracting properties for `cobrowseSelector` modifier
 
-## [3.6.0](#) (2025-04-08)
+## [3.7.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.7.0) (2025-05-23)
 
 
 ### Features
 
-* webview redaction rules ([#326](#)) ([2f7ffb3](#))
-
-### [3.5.1](#) (2025-04-04)
+* webview domain redaction config from sdk
 
 
 ### Bug Fixes
 
-* avoid injecting redundant `cobrowseSelector()` modifiers ([#335](#)) ([4923673](#))
-* extract `testTag` modifier value if it's behind `Modifier.then` ([#336](#)) ([75dac37](#))
+* extract `testTag` value if it's inside `remember` function
 
-## [3.5.0](#) (2025-04-01)
+## [3.6.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.6.0) (2025-04-08)
 
 
 ### Features
 
-* add playground support for Compose UI ([#331](#)) ([4abac21](#))
-* add support for different tool colors and disappearing ink drawings ([#323](#)) ([fcf8611](#))
-* support unredaction for Jetpack Compose UI ([#325](#)) ([f650010](#))
+* webview redaction rules
+
+### [3.5.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.5.1) (2025-04-04)
 
 
 ### Bug Fixes
 
-* make `defaultAttributes` an ordinary map type ([#327](#)) ([b2e0921](#))
-* throw an exception when trying to set an invalid redaction selector ([#330](#)) ([9803a6c](#))
-* treat ID in selectors as `id` property of `attributes` ([#332](#)) ([f9fb701](#))
+* avoid injecting redundant `cobrowseSelector()` modifiers
+* extract `testTag` modifier value if it's behind `Modifier.then`
 
-### [3.4.1](#) (2025-03-11)
-
-## [3.4.0](#) (2025-03-05)
+## [3.5.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.5.0) (2025-04-01)
 
 
 ### Features
 
-* allow additional Compose redaction selector attributes be set in Gradle configuration ([#321](#)) ([1d99fe0](#))
+* add playground support for Compose UI
+* add support for different tool colors and disappearing ink drawings
+* support unredaction for Jetpack Compose UI
 
 
 ### Bug Fixes
 
-* reduce overhead of Compose redaction modifiers ([#320](#)) ([f3e00b5](#))
+* make `defaultAttributes` an ordinary map type
+* throw an exception when trying to set an invalid redaction selector
+* treat ID in selectors as `id` property of `attributes`
 
-## [3.3.0](#) (2025-02-27)
+### [3.4.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.4.1) (2025-03-11)
+
+## [3.4.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.4.0) (2025-03-05)
 
 
 ### Features
 
-* add support for multi-level redaction selectors in Compose UI ([#318](#)) ([1a8f5fc](#))
-* add support to arrows and rectangles drawings ([#317](#)) ([bec9df2](#))
-* use Kotlin 2.0 ([#307](#)) ([65f6f9f](#))
-
-### [3.2.1](#) (2025-02-12)
+* allow additional Compose redaction selector attributes be set in Gradle configuration
 
 
 ### Bug Fixes
 
-* keep a more consistent Modifier chain in Compose UI for redaction overlays ([#316](#)) ([347022f](#))
+* reduce overhead of Compose redaction modifiers
 
-## [3.2.0](#) (2025-02-11)
+## [3.3.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.3.0) (2025-02-27)
 
 
 ### Features
 
-* Android 16 Beta 1 support ([#285](#)) ([9701328](#))
+* add support for multi-level redaction selectors in Compose UI
+* add support to arrows and rectangles drawings
+* use Kotlin 2.0
+
+### [3.2.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.2.1) (2025-02-12)
 
 
 ### Bug Fixes
 
-* fix incorrect bounds of redaction overlay on multi-line `EditText` ([#314](#)) ([613c741](#))
+* keep a more consistent Modifier chain in Compose UI for redaction overlays
 
-## [3.1.0](#) (2025-02-04)
+## [3.2.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.2.0) (2025-02-11)
 
 
 ### Features
 
-* add `CobrowseIO.okHttpClient()` method to let the host app provide its own `OkHttpClient` instance ([#313](#)) ([2e7dc69](#))
-* unify `Modifier.cobrowseSelector()` with `Modifier.cobrowseAutomatedSelector()` ([#306](#)) ([f5bf22a](#))
+* Android 16 Beta 1 support
 
 
 ### Bug Fixes
 
-* remote control back event not handled if "predictive back" feature is enabled ([#312](#)) ([a4f3a94](#))
+* fix incorrect bounds of redaction overlay on multi-line `EditText`
 
-### [3.0.3](#) (2025-01-29)
-
-### [3.0.2](#) (2025-01-28)
-
-
-### Bug Fixes
-
-* compatibility issues with Kotlin 2.0 in the compiler plugin ([#308](#)) ([93571c1](#))
-
-### [3.0.1](#) (2025-01-28)
+## [3.1.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.1.0) (2025-02-04)
 
 
 ### Features
 
-* allow disabling injecting automated Compose UI redaction selectors if selector is already set in the code ([#304](#)) ([805f746](#))
+* add `CobrowseIO.okHttpClient()` method to let the host app provide its own `OkHttpClient` instance
+* unify `Modifier.cobrowseSelector()` with `Modifier.cobrowseAutomatedSelector()`
 
-## [3.0.0](#) (2025-01-27)
+
+### Bug Fixes
+
+* remote control back event not handled if "predictive back" feature is enabled
+
+### [3.0.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.0.3) (2025-01-29)
+
+### [3.0.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.0.2) (2025-01-28)
+
+
+### Bug Fixes
+
+* compatibility issues with Kotlin 2.0 in the compiler plugin
+
+### [3.0.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.0.1) (2025-01-28)
+
+
+### Features
+
+* allow disabling injecting automated Compose UI redaction selectors if selector is already set in the code
+
+## [3.0.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.0.0) (2025-01-27)
 
 
 ### ⚠ BREAKING CHANGES
@@ -429,383 +451,383 @@ Intercom.client().updateUser(
 
 ### Features
 
-* allow verbose logging in the Gradle build plugin ([#300](#)) ([e98bd15](#))
-* call delegate methods when no activity is running ([#297](#)) ([ffcbfb7](#))
-* only allow strings as customData ([#287](#)) ([53610c5](#))
-* Remove automatic intercom integration ([#288](#)) ([f216763](#))
-* Remove bool versions of full device ([#290](#)) ([966dcb1](#))
-* Remove default code and session UI ([#298](#)) ([9bd7148](#))
-* remove deprecated Cobrowse APIs which required `Application` / `Activity` instances. ([#291](#)) ([b9eb9e6](#))
-* Rename `redacted` Compose UI modifier to `cobrowseRedacted` ([#286](#)) ([8e67de2](#))
-* Update minimum API version to 1.21.0 ([#289](#)) ([07cea76](#))
+* allow verbose logging in the Gradle build plugin
+* call delegate methods when no activity is running
+* only allow strings as customData
+* Remove automatic intercom integration
+* Remove bool versions of full device
+* Remove default code and session UI
+* remove deprecated Cobrowse APIs which required `Application` / `Activity` instances.
+* Rename `redacted` Compose UI modifier to `cobrowseRedacted`
+* Update minimum API version to 1.21.0
 
 
 ### Bug Fixes
 
-* allow events with integer values ([#299](#)) ([d9c2cdb](#))
-* redaction selectors for Compose UI not being injected into anonymous blocks ([#301](#)) ([fc7984a](#))
+* allow events with integer values
+* redaction selectors for Compose UI not being injected into anonymous blocks
 
-## [2.39.0](#) (2024-12-16)
+## [2.39.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.39.0) (2024-12-16)
 
 
 ### Features
 
-* add support for `Modifier.testTag("")` in automated selectors for Compose UI ([#295](#)) ([5344b4f](#))
+* add support for `Modifier.testTag("")` in automated selectors for Compose UI
 
-## [2.38.0](#) (2024-11-28)
-
-
-### Features
-
-* ensure that SDK callbacks are invoked on the main thread  ([#283](#)) ([b892ab4](#))
-* target Android 14 (API 34) ([a249039](#))
-
-
-### Bug Fixes
-
-* rendering error with Compose `GraphicsLayer` API ([#284](#)) ([055cadf](#))
-
-### [2.37.3](#) (2024-10-31)
-
-### [2.37.2](#) (2024-10-30)
-
-
-### Bug Fixes
-
-* ComposeUI semantics naming ([#279](#)) ([711a229](#))
-
-### [2.37.1](#) (2024-10-29)
-
-## [2.37.0](#) (2024-10-29)
+## [2.38.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.38.0) (2024-11-28)
 
 
 ### Features
 
-* introduce Kotlin compiler plugin and Gradle build plugin for compose UI redaction automation ([#272](#)) ([9756bf9](#))
-
-### [2.36.1](#) (2024-10-11)
+* ensure that SDK callbacks are invoked on the main thread 
+* target Android 14 (API 34)
 
 
 ### Bug Fixes
 
-* **remote_control:** Restore keypress capability ([#277](#)) ([a893b53](#))
+* rendering error with Compose `GraphicsLayer` API
 
-## [2.36.0](#) (2024-10-04)
+### [2.37.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.37.3) (2024-10-31)
+
+### [2.37.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.37.2) (2024-10-30)
+
+
+### Bug Fixes
+
+* ComposeUI semantics naming
+
+### [2.37.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.37.1) (2024-10-29)
+
+## [2.37.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.37.0) (2024-10-29)
 
 
 ### Features
 
-* add selector parsing in SDK ([#276](#)) ([5c90d87](#))
+* introduce Kotlin compiler plugin and Gradle build plugin for compose UI redaction automation
 
-### [2.35.2](#) (2024-09-26)
-
-
-### Bug Fixes
-
-* catch invalid selectors ([2af549a](#))
-
-### [2.35.1](#) (2024-09-14)
+### [2.36.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.36.1) (2024-10-11)
 
 
 ### Bug Fixes
 
-* optimisation for dashboard selectors ([abce2de](#))
+* **remote_control:** Restore keypress capability
 
-## [2.35.0](#) (2024-09-11)
+## [2.36.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.36.0) (2024-10-04)
 
 
 ### Features
 
-* add Redaction index to improve selector performance ([#273](#)) ([933f297](#))
-* single level dashboard selector support for Compose UI ([#275](#)) ([b92ff62](#))
+* add selector parsing in SDK
 
-### [2.34.3](#) (2024-08-27)
-
-### [2.34.2](#) (2024-07-25)
+### [2.35.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.35.2) (2024-09-26)
 
 
 ### Bug Fixes
 
-* fix WebView over-redaction with ComposeUI ([#271](#)) ([ed4dc44](#))
-* the SDK now asks for the redacted views on scroll events ([#269](#)) ([488e926](#))
+* catch invalid selectors
 
-### [2.34.1](#) (2024-07-03)
+### [2.35.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.35.1) (2024-09-14)
 
 
 ### Bug Fixes
 
-* auto-accept the media projection prompt on Google Pixel phones with Android 14 ([#262](#)) ([ad0040e](#))
-* avoid rendering incomplete frames if a hardware bitmap is on the screen ([#267](#)) ([8aaac21](#))
-* ensure we don't untrack webviews if they are still visible ([#265](#)) ([8704ae0](#))
-* update the CBOR Java dependency to `4.5.4` to fix CVE-2024-23684 ([#268](#)) ([62df3a1](#))
+* optimisation for dashboard selectors
 
-## [2.34.0](#) (2024-06-05)
+## [2.35.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.35.0) (2024-09-11)
 
 
 ### Features
 
-* Android 15 support; target Android 14 ([#243](#)) ([d866903](#))
-* force webviews to LAYER_TYPE_NONE while in session ([#256](#)) ([7074f0c](#))
+* add Redaction index to improve selector performance
+* single level dashboard selector support for Compose UI
+
+### [2.34.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.34.3) (2024-08-27)
+
+### [2.34.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.34.2) (2024-07-25)
 
 
 ### Bug Fixes
 
-* auto-accepting the media projection prompt on Samsung with Android 14 ([#253](#)) ([53a4e28](#))
-* disable overscroll when in session to prevent leaking sensitive data on full device mode ([#259](#)) ([ccc81ce](#))
-* don't use the broken H264 encoder on Raspberry ([#254](#)) ([b91157e](#))
-* improve webview redaction with better handling of scroll state mismatches ([#258](#)) ([d14141d](#))
-* reduce number of suppressed frames on global layouts ([804c32c](#))
-* reduce redaction flicker caused by redacted webviews ([#249](#)) ([23e0528](#))
-* stop frames being rescheduled early too frequently ([ee281b8](#))
+* fix WebView over-redaction with ComposeUI
+* the SDK now asks for the redacted views on scroll events
 
-### [2.33.1](#) (2024-04-22)
+### [2.34.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.34.1) (2024-07-03)
 
 
 ### Bug Fixes
 
-* prefer `COLOR_FormatYUV420Flexible` color format when possible ([#240](#)) ([6dde2e9](#))
+* auto-accept the media projection prompt on Google Pixel phones with Android 14
+* avoid rendering incomplete frames if a hardware bitmap is on the screen
+* ensure we don't untrack webviews if they are still visible
+* update the CBOR Java dependency to `4.5.4` to fix CVE-2024-23684
 
-## [2.33.0](#) (2024-04-03)
+## [2.34.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.34.0) (2024-06-05)
 
 
 ### Features
 
-* implement redaction for Jetpack Compose UI ([#232](#)) ([749745d](#))
+* Android 15 support; target Android 14
+* force webviews to LAYER_TYPE_NONE while in session
 
 
 ### Bug Fixes
 
-* crash when rendering a window with a hardware bitmap on it ([#238](#)) ([8db83d4](#))
+* auto-accepting the media projection prompt on Samsung with Android 14
+* disable overscroll when in session to prevent leaking sensitive data on full device mode
+* don't use the broken H264 encoder on Raspberry
+* improve webview redaction with better handling of scroll state mismatches
+* reduce number of suppressed frames on global layouts
+* reduce redaction flicker caused by redacted webviews
+* stop frames being rescheduled early too frequently
 
-### [2.32.2](#) (2024-02-20)
+### [2.33.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.33.1) (2024-04-22)
 
 
 ### Bug Fixes
 
-* ensure webview is redacted while calculating webview redaction even if the webview itself is unredacted ([#237](#)) ([7cc04ea](#))
+* prefer `COLOR_FormatYUV420Flexible` color format when possible
 
-### [2.32.1](#) (2024-02-20)
-
-
-### Bug Fixes
-
-* issue when a session is changed from a push notification received in a background thread ([#234](#)) ([9a8ca86](#))
-
-## [2.32.0](#) (2024-02-07)
+## [2.33.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.33.0) (2024-04-03)
 
 
 ### Features
 
-* make `CobrowseService` removable ([#236](#)) ([269d3e4](#))
+* implement redaction for Jetpack Compose UI
 
-### [2.31.1](#) (2024-01-17)
 
-## [2.31.0](#) (2024-01-17)
+### Bug Fixes
+
+* crash when rendering a window with a hardware bitmap on it
+
+### [2.32.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.32.2) (2024-02-20)
+
+
+### Bug Fixes
+
+* ensure webview is redacted while calculating webview redaction even if the webview itself is unredacted
+
+### [2.32.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.32.1) (2024-02-20)
+
+
+### Bug Fixes
+
+* issue when a session is changed from a push notification received in a background thread
+
+## [2.32.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.32.0) (2024-02-07)
 
 
 ### Features
 
-* let agents to type passwords into secure input fields in the full device mode ([#231](#)) ([0d23d8c](#))
+* make `CobrowseService` removable
 
-### [2.30.4](#) (2024-01-02)
+### [2.31.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.31.1) (2024-01-17)
 
-
-### Bug Fixes
-
-* SDK not refreshing frames correctly when a camera preview is shown ([#229](#)) ([1f2c18e](#))
-
-### [2.30.3](#) (2023-12-08)
-
-
-### Bug Fixes
-
-* error when redacting a scroll container which is not a `ViewGroup` ([#226](#)) ([9b1b0ca](#))
-
-### [2.30.2](#) (2023-11-22)
-
-
-### Bug Fixes
-
-* WebView redaction not working in a ConstaintLayout container ([#225](#)) ([c511d1d](#))
-
-### [2.30.1](#) (2023-11-06)
-
-
-### Bug Fixes
-
-* clear `currentSession()` if an error is returned ([#212](#)) ([037a254](#))
-* declare `ACCESS_NETWORK_STATE` permission requirement ([#218](#)) ([1d22031](#))
-
-## [2.30.0](#) (2023-10-02)
+## [2.31.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.31.0) (2024-01-17)
 
 
 ### Features
 
-* allow capabilities to be set on a session object ([#213](#)) ([0929fec](#))
+* let agents to type passwords into secure input fields in the full device mode
 
-## [2.29.0](#) (2023-09-11)
+### [2.30.4](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.30.4) (2024-01-02)
+
+
+### Bug Fixes
+
+* SDK not refreshing frames correctly when a camera preview is shown
+
+### [2.30.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.30.3) (2023-12-08)
+
+
+### Bug Fixes
+
+* error when redacting a scroll container which is not a `ViewGroup`
+
+### [2.30.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.30.2) (2023-11-22)
+
+
+### Bug Fixes
+
+* WebView redaction not working in a ConstaintLayout container
+
+### [2.30.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.30.1) (2023-11-06)
+
+
+### Bug Fixes
+
+* clear `currentSession()` if an error is returned
+* declare `ACCESS_NETWORK_STATE` permission requirement
+
+## [2.30.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.30.0) (2023-10-02)
 
 
 ### Features
 
-* add new method `CobrowseIO#setDeviceToken()` which does not require an applicaiton instance ([#204](#)) ([aa4956c](#))
-* SDK now targets Android 13 (API 33) ([#203](#)) ([aea9f40](#))
+* allow capabilities to be set on a session object
 
-
-### Bug Fixes
-
-* use sdk capabilities when not available from the server ([#211](#)) ([1b9eb3d](#))
-
-### [2.28.2](#) (2023-08-07)
-
-
-### Bug Fixes
-
-* meet new requirements for foreground service on Android 14 ([#196](#)) ([1d9d7fe](#))
-* use a different default session indicator in the multi-window mode ([#198](#)) ([eaad75e](#))
-
-### [2.28.1](#) (2023-07-31)
-
-
-### Bug Fixes
-
-* explicitly set layout of View when redacting webview in react native ([#197](#)) ([2422bc0](#))
-
-## [2.28.0](#) (2023-06-30)
+## [2.29.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.29.0) (2023-09-11)
 
 
 ### Features
 
-* Android 14 (API 34) support ([#192](#)) ([0dbc7ee](#))
-* Implement redaction within WebViews ([#187](#)) ([73c28da](#))
+* add new method `CobrowseIO#setDeviceToken()` which does not require an applicaiton instance
+* SDK now targets Android 13 (API 33)
 
-## [2.27.0](#) (2023-06-05)
+
+### Bug Fixes
+
+* use sdk capabilities when not available from the server
+
+### [2.28.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.28.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* meet new requirements for foreground service on Android 14
+* use a different default session indicator in the multi-window mode
+
+### [2.28.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.28.1) (2023-07-31)
+
+
+### Bug Fixes
+
+* explicitly set layout of View when redacting webview in react native
+
+## [2.28.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.28.0) (2023-06-30)
 
 
 ### Features
 
-* add new parameterless methods `CobrowseIO#start()` and `CobrowseIO#deviceId()` ([#189](#)) ([3728a09](#))
+* Android 14 (API 34) support
+* Implement redaction within WebViews
 
-## [2.26.0](#) (2023-05-01)
-
-
-### Bug Fixes
-
-* finish `CobrowseAccessibilitySetup` activity after opening the system settings ([#185](#)) ([8fb5e30](#))
-
-### [2.25.2](#) (2023-04-13)
-
-
-### Bug Fixes
-
-* Fix capabilities state in full-device mode ([#183](#)) ([ead57b5](#))
-
-### [2.25.1](#) (2023-03-13)
-
-## [2.25.0](#) (2023-03-12)
+## [2.27.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.27.0) (2023-06-05)
 
 
 ### Features
 
-* Support unredaction as a first class SDK feature ([#178](#)) ([92f4dfa](#))
+* add new parameterless methods `CobrowseIO#start()` and `CobrowseIO#deviceId()`
 
-## [2.24.0](#) (2023-03-02)
+## [2.26.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.26.0) (2023-05-01)
+
+
+### Bug Fixes
+
+* finish `CobrowseAccessibilitySetup` activity after opening the system settings
+
+### [2.25.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.25.2) (2023-04-13)
+
+
+### Bug Fixes
+
+* Fix capabilities state in full-device mode
+
+### [2.25.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.25.1) (2023-03-13)
+
+## [2.25.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.25.0) (2023-03-12)
 
 
 ### Features
 
-* allow new sessions to preempt existing ones ([5a80566](#))
-* Capabilities support ([#175](#)) ([551ba76](#))
-* support non-FQDN socket URLs ([50698a2](#))
+* Support unredaction as a first class SDK feature
 
-
-### Bug Fixes
-
-* registration job ID misuse ([#173](#)) ([838e7ce](#))
-
-### [2.23.5](#) (2022-12-20)
-
-
-### Bug Fixes
-
-* bug when SDK does not accept API URL with a trailing slash ([#162](#)) ([fe2f3fc](#))
-* networking concurrency issue that may throw `NullPointerException` invoking `int java.util.Timer.purge()` on a null object reference ([#170](#)) ([1c4681b](#))
-
-### [2.23.4](#) (2022-11-08)
-
-### [2.23.3](#) (2022-11-08)
-
-### [2.23.2](#) (2022-11-08)
-
-### [2.23.1](#) (2022-11-08)
-
-## [2.23.0](#) (2022-09-06)
+## [2.24.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.24.0) (2023-03-02)
 
 
 ### Features
 
-* allow customization of full device request behavior. ([35a75ba](#))
+* allow new sessions to preempt existing ones
+* Capabilities support
+* support non-FQDN socket URLs
 
 
 ### Bug Fixes
 
-* redaction overlay not appearing on TextView/EditText which have both `android:gravity="end"` and `android:singleLine="true"` attributes set. ([fffaca3](#))
-* remote redaction not applying to fragment dialogs. ([e207bd0](#))
+* registration job ID misuse
 
-## [2.22.0](#) (2022-08-29)
+### [2.23.5](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.5) (2022-12-20)
+
+
+### Bug Fixes
+
+* bug when SDK does not accept API URL with a trailing slash
+* networking concurrency issue that may throw `NullPointerException` invoking `int java.util.Timer.purge()` on a null object reference
+
+### [2.23.4](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.4) (2022-11-08)
+
+### [2.23.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.3) (2022-11-08)
+
+### [2.23.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.2) (2022-11-08)
+
+### [2.23.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.1) (2022-11-08)
+
+## [2.23.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.23.0) (2022-09-06)
 
 
 ### Features
 
-* SDK now targets Android 12 (API 31). ([d821ec7](#))
+* allow customization of full device request behavior.
 
 
 ### Bug Fixes
 
-* automatically accept the MediaProjection prompt on Android 12L in the accessibility service. ([529f838](#))
-* don't use `COLOR_FormatYUV420SemiPlanar` on Android 12 and newer. ([c249a6d](#))
-* H264 encoder on HTC 10 and Sharp SH-01L. ([6fae952](#))
+* redaction overlay not appearing on TextView/EditText which have both `android:gravity="end"` and `android:singleLine="true"` attributes set.
+* remote redaction not applying to fragment dialogs.
 
-### [2.21.6](#) (2022-05-31)
+## [2.22.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.22.0) (2022-08-29)
 
 
-### Bug Fixes
+### Features
 
-* fix a case that could potentially cause duplicate full device prompts to be shown ([ecd0ff9](#))
-
-### [2.21.5](#) (2022-05-25)
+* SDK now targets Android 12 (API 31).
 
 
 ### Bug Fixes
 
-* add support for redacting NestedScrollViews. ([de54c26](#))
-* don't set profile and level on MSM8996 devices with Android 8. ([9f16851](#))
-* remote drawing is not showing properly when device the refresh rate changes. ([a2f6452](#))
+* automatically accept the MediaProjection prompt on Android 12L in the accessibility service.
+* don't use `COLOR_FormatYUV420SemiPlanar` on Android 12 and newer.
+* H264 encoder on HTC 10 and Sharp SH-01L.
 
-### [2.21.4](#) (2022-05-12)
-
-
-### Bug Fixes
-
-* add support for redacting horizontal scroll views ([4b7cbd8](#))
-
-### [2.21.3](#) (2022-05-06)
+### [2.21.6](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.6) (2022-05-31)
 
 
 ### Bug Fixes
 
-* redact all scroll content in ScrollViews ([cc66ce5](#))
+* fix a case that could potentially cause duplicate full device prompts to be shown
 
-### [2.21.2](#) (2022-05-06)
+### [2.21.5](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.5) (2022-05-25)
 
 
 ### Bug Fixes
 
-* extend redaction overlays in scroll containers ([d2e7bec](#))
+* add support for redacting NestedScrollViews.
+* don't set profile and level on MSM8996 devices with Android 8.
+* remote drawing is not showing properly when device the refresh rate changes.
 
-### [2.21.1](#) (2022-05-06)
+### [2.21.4](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.4) (2022-05-12)
 
-## [2.21.0](#) (2022-05-06)
+
+### Bug Fixes
+
+* add support for redacting horizontal scroll views
+
+### [2.21.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* redact all scroll content in ScrollViews
+
+### [2.21.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.2) (2022-05-06)
+
+
+### Bug Fixes
+
+* extend redaction overlays in scroll containers
+
+### [2.21.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.1) (2022-05-06)
+
+## [2.21.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.21.0) (2022-05-06)
 
 
 ### Features
@@ -817,14 +839,14 @@ Intercom.client().updateUser(
 
 * fix H264 encoder on Google Pixel devices with Android 12.
 
-### [2.20.1](#) (2022-04-26)
+### [2.20.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.20.1) (2022-04-26)
 
 
 ### Bug Fixes
 
 * trigger a new full device permission prompt the first time it is used in each session
 
-## [2.20.0](#) (2022-04-19)
+## [2.20.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.20.0) (2022-04-19)
 
 
 ### Features
@@ -837,7 +859,7 @@ Intercom.client().updateUser(
 
 * use full device requested as default value for old servers
 
-## [2.19.0](#) (2022-04-14)
+## [2.19.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.19.0) (2022-04-14)
 
 
 ### Features
@@ -849,35 +871,35 @@ Intercom.client().updateUser(
 
 * add the customer Proguard/R8 rules.
 
-### [2.18.2](#) (2022-02-16)
+### [2.18.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.18.2) (2022-02-16)
 
 
 ### Bug Fixes
 
 * Fix untrusted touch events being blocked on Android 12
 
-### [2.18.1](#) (2022-02-07)
+### [2.18.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.18.1) (2022-02-07)
 
 
 ### Bug Fixes
 
 * only call loaded event after call completes
 
-## [2.18.0](#) (2022-02-02)
+## [2.18.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.18.0) (2022-02-02)
 
 
 ### Features
 
 * add delegate method that's called the first time a session is fetched from the server
 
-### [2.17.2](#) (2022-01-31)
+### [2.17.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.17.2) (2022-01-31)
 
 
 ### Bug Fixes
 
 * dynamically update full_device_control in device info on session object
 
-### [2.17.1](#) (2022-01-31)
+### [2.17.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.17.1) (2022-01-31)
 
 
 ### Bug Fixes
@@ -888,7 +910,7 @@ Intercom.client().updateUser(
 * get rid of redundant process lifecycle listener.
 * specify the mutability flag in the notification PendingIntent.
 
-## [2.17.0](#) (2022-01-28)
+## [2.17.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.17.0) (2022-01-28)
 
 
 ### Features
@@ -901,7 +923,7 @@ Intercom.client().updateUser(
 * Replace AsyncTask with java.util.concurrent classes
 * skip custom data updates that match the cached version
 
-## [2.16.0](#) (2021-12-08)
+## [2.16.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.16.0) (2021-12-08)
 
 
 **Special Consideration**
@@ -913,7 +935,7 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 
 * don't activate 'android.permission.BIND_ACCESSIBILITY_SERVICE' by default.
 
-### [2.15.1](#) (2021-12-08)
+### [2.15.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.15.1) (2021-12-08)
 
 
 ### Bug Fixes
@@ -921,7 +943,7 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 * slow screen update on back navigation.
 * TextureView capture on Android 4.4.
 
-## [2.15.0](#) (2021-11-29)
+## [2.15.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.15.0) (2021-11-29)
 
 
 ### Features
@@ -935,14 +957,14 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 
 * disable COLOR_FormatYUV420SemiPlanar on Google Pixel 3a XL.
 
-### [2.14.1](#) (2021-11-15)
+### [2.14.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.14.1) (2021-11-15)
 
 
 ### Bug Fixes
 
 * initialise custom data as soon as 6 digit code is created.
 
-## [2.14.0](#) (2021-11-08)
+## [2.14.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.14.0) (2021-11-08)
 
 
 ### Features
@@ -955,7 +977,7 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 * run initialization from a background thread.
 * never stop CobrowseService before starting it again.
 
-## [2.13.0](#) (2021-10-20)
+## [2.13.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.13.0) (2021-10-20)
 
 
 ### Features
@@ -972,9 +994,9 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 * don't destroy the MediaCodec instance when resetting the encoder.
 * IllegalStateException when accessing 'MediaCodec.getOutputFormat()' on Android 4.4.
 * remove warning for non-production APIs
-* fix the mediaprojection prompt autoclick on Android 11. ([c167cdc](#))
+* fix the mediaprojection prompt autoclick on Android 11.
 
-### [2.12.3](#) (2021-09-24)
+### [2.12.3](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.12.3) (2021-09-24)
 
 
 ### Bug Fixes
@@ -982,14 +1004,14 @@ Due to recent Google Play Store policy changes regarding use of the Accessibilit
 * prevent black screen flashes on the agent side
 * stop automatically accepting all MediaProjection prompts if the current session is not full-device.
 
-### [2.12.2](#) (2021-09-14)
+### [2.12.2](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.12.2) (2021-09-14)
 
 
 ### Bug Fixes
 
 * full-device prompt auto-click on Android 5.1
 
-### [2.12.1](#) (2021-07-13)
+### [2.12.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v2.12.1) (2021-07-13)
 - Added experimental support for Surface based views
 - Improved touch handling for full device control
 
