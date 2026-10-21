@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.19.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.19.1) (2026-10-21)
+
+
+### Bug Fixes
+
+* compile the benchmark tests again and build them on CI, closes [#524](#)
+* destroy a removed display's encoder
+* discourage `Session.update()` API
+* full-device capture stuck after the screen capture prompt is rebuilt
+
 ## [3.19.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.19.0) (2026-10-09)
 
 
