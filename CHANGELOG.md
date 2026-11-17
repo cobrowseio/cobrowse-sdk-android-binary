@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.20.0](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.20.0) (2026-11-17)
+
+
+### Features
+
+* introduce `CobrowseIO.isStarted()`
+* register Firebase installation IDs with `setDeviceToken(PushToken.firebaseInstallationId(id))`
+* report the device's connection to Cobrowse through DeviceConnectivityDelegate
+
+
+### Bug Fixes
+
+* `CobrowseIO.stop()` leaves `CobrowseService` and `DeviceRegistrationLoop.CobrowseRegistrationJob` running
+* a display change restarted the `MediaProjection` after full device is already off on Android 13 and older
+* Kotlin compiler plugin clears the wrong `$default` bit for some composables
+* render a new frame when the session scale changes
+* SDK can throw IllegalStateException when capturing stops
+* WebView draw listener stays on the window after the WebView is detached
+* WebView redaction can query the DOM of a destroyed WebView
+
 ### [3.19.1](https://github.com/cobrowseio/cobrowse-sdk-android-binary/releases/tag/v3.19.1) (2026-10-21)
 
 
